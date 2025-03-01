@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Exceptions>
+	<item>
+		<present>be</present>
+		<thirdperson>is</thirdperson>
+	</item>
+	<item>
+		<present>be</present>
+		<thirdperson>is</thirdperson>
+	</item>
+	<item>
+		<present>can</present>
+		<thirdperson>can</thirdperson>
+	</item>
+	<item>
+		<present>do</present>
+		<thirdperson>does</thirdperson>
+	</item>
+	<item>
+		<present>dive</present>
+		<thirdperson>dives</thirdperson>
+	</item>
+	<item>
+		<present>enjoy</present>
+		<thirdperson>enjoys</thirdperson>
+	</item>
+        <item>
+                <present>go out</present>
+                <thirdperson>goes out</thirdperson>
+        </item>
+	<item>
+		<present>have</present>
+		<thirdperson>has</thirdperson>
+	</item>
+	<item>
+		<present>lay</present>
+		<thirdperson>lays</thirdperson>
+	</item>
+	<item>
+		<present>must</present>
+		<thirdperson>must</thirdperson>
+	</item>
+	<item>
+		<present>pay</present>
+		<thirdperson>pays</thirdperson>
+	</item>
+	<item>
+		<present>piano</present>
+		<thirdperson>pianos</thirdperson>
+	</item>
+	<item>
+		<present>play</present>
+		<thirdperson>plays</thirdperson>
+	</item>
+	<item>
+		<present>photo</present>
+		<thirdperson>photos</thirdperson>
+	</item>
+	<item>
+		<present>say</present>
+		<thirdperson>says</thirdperson>
+	</item>
+	<item>
+		<present>should</present>
+		<thirdperson>should</thirdperson>
+	</item>
+	<item>
+		<present>solo</present>
+		<thirdperson>solos</thirdperson>
+	</item>
+</Exceptions>
+

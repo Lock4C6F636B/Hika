@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alphabet>
+	<base>
+		<letter>あ</letter>
+		<letter>い</letter>
+		<letter>う</letter>
+		<letter>え</letter>
+		<letter>お</letter>
+	</base>
+
+	<k_type>
+		<letter>か</letter>
+		<letter>き</letter>
+		<letter>く</letter>
+		<letter>け</letter>
+		<letter>こ</letter>
+
+		<letter>が</letter>
+		<letter>ぎ</letter>
+		<letter>ぐ</letter>
+		<letter>げ</letter>
+		<letter>ご</letter>
+	</k_type>
+
+	<s_type>
+		<letter>さ</letter>
+		<letter>し</letter>
+		<letter>す</letter>
+		<letter>せ</letter>
+		<letter>そ</letter>
+
+		<letter>ざ</letter>
+		<letter>じ</letter>
+		<letter>ず</letter>
+		<letter>ぜ</letter>
+		<letter>ぞ</letter>
+	</s_type>
+
+	<t_type>
+		<letter>た</letter>
+		<letter>ち</letter>
+		<letter>つ</letter>
+		<letter>て</letter>
+		<letter>と</letter>
+
+		<letter>だ</letter>
+		<letter>ぢ</letter>
+		<letter>づ</letter>
+		<letter>で</letter>
+		<letter>ど</letter>
+	</t_type>
+
+	<h_type>
+		<letter>は</letter>
+		<letter>ひ</letter>
+		<letter>ふ</letter>
+		<letter>へ</letter>
+		<letter>ほ</letter>
+
+		<letter>ば</letter>
+		<letter>び</letter>
+		<letter>ぶ</letter>
+		<letter>べ</letter>
+		<letter>ぼ</letter>
+
+		<letter>ぱ</letter>
+		<letter>ぴ</letter>
+		<letter>ぷ</letter>
+		<letter>ぺ</letter>
+		<letter>ぽ</letter>
+	</h_type>
+
+	<n_type>
+		<letter>な</letter>
+		<letter>に</letter>
+		<letter>ぬ</letter>
+		<letter>ね</letter>
+		<letter>の</letter>
+	</n_type>
+
+	<m_type>
+		<letter>ま</letter>
+		<letter>み</letter>
+		<letter>む</letter>
+		<letter>め</letter>
+		<letter>も</letter>
+	</m_type>
+
+	<y_type>
+		<letter>や</letter>
+		<letter>ゆ</letter>
+		<letter>よ</letter>
+	</y_type>
+
+	<r_type>
+		<letter>ら</letter>
+		<letter>り</letter>
+		<letter>る</letter>
+		<letter>れ</letter>
+		<letter>ろ</letter>
+	</r_type>
+
+	<w_type>
+		<letter>わ</letter>
+		<letter>を</letter>
+	</w_type>
+
+	<n>
+		<letter>ん</letter>
+	</n>
+</Alphabet>

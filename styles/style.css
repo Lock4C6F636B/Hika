@@ -1,0 +1,106 @@
+HiKa {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.866, y2:0.728366, stop:0.00811359 rgba(201, 94, 17, 255), stop:0.0516055 rgba(169, 52, 13, 255), stop:0.148467 rgba(173, 20, 9, 255), stop:0.225291 rgba(126, 18, 4, 255), stop:0.350291 rgba(71, 14, 0, 255), stop:0.456897 rgba(35, 9, 13, 255), stop:0.572319 rgba(3, 4, 17, 255));
+}
+
+/* Make WBWindow style more specific and force it */
+QWidget#WBWindow {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.866, y2:0.728366, stop:0.00811359 rgba(201, 94, 17, 255), stop:0.0516055 rgba(169, 52, 13, 255), stop:0.148467 rgba(173, 20, 9, 255), stop:0.225291 rgba(126, 18, 4, 255), stop:0.350291 rgba(71, 14, 0, 255), stop:0.456897 rgba(35, 9, 13, 255), stop:0.572319 rgba(3, 4, 17, 255)) !important;
+}
+
+/* Make InflectWindow style more specific and force it */
+QWidget#InflectWindow {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.0893855 rgba(0, 255, 207, 125), stop:0.374302 rgba(0, 0, 0, 255)) !important;
+}
+
+
+
+QLabel#logoLabel{
+font-family: "Z003";
+    font-weight: bold;  /* or 700 */
+    font-style: italic;
+    font-size: 38;
+    image: url(:/resources/120410702_p0_master1200.png);
+    color: qlineargradient(spread:reflect, x1:0, y1:0.058, x2:0.00492611, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.260083 rgba(165, 14, 0, 255), stop:0.408901 rgba(255, 56, 51, 255), stop:1 rgba(255, 0, 0, 255));
+    background: transparent
+}
+
+
+QPushButton {
+    font-family: "mikachan-puchi";
+    font-style: italic;
+    font-size: 20pt;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 4px;
+    text-align: center;
+}
+
+
+QPushButton:focus {
+    color: red;
+    font-family: "mikachan-puchi";
+    font-size: 22pt;  /* Keep exactly the same as non-focused */
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+        stop:0.125243 rgba(0, 0, 0, 0),
+        stop:0.485437 rgba(65, 0, 0, 133),
+        stop:0.67205 rgba(137, 11, 0, 175),
+        stop:0.903599 rgba(211, 45, 0, 229),
+        stop:0.956298 rgba(255, 0, 0, 255),
+        stop:1 rgba(255, 71, 18, 255));
+    outline: none;
+    min-height: 2em;
+    margin: 4px;
+}
+
+QLabel#imageLabel{
+    image: url(:/resources/00076-1176146472-swapped.png);
+    background-color: transparent;
+}
+
+
+QLabel#imageLabel[state="1"] {
+    image: url(:/resources/tsuki.png);
+    background-color: transparent;
+}
+
+QLabel#imageLabel[state="2"] {
+    image: url(:/resources/success_1.png);
+    background-color: transparent;
+}
+
+QLabel#imageLabel[state="3"] {
+    image: url(:/:/resources/succes_2.png);
+    background-color: transparent;
+}
+
+QLabel#imageLabel[state="4"] {
+    image: url(:/resources/00041-3853208862-swapped.png);
+    background-color: transparent;
+}
+
+QLabel#imageLabel[state="5"] {
+    image: url(:/resources/success1.png);
+    background-color: transparent;
+}
+
+QLabel#imageLabel[state="6"] {
+    image: url(:/resources/success1.png);
+    background-color: transparent;
+}
+
+QLabel#imageLabel[state="-1"] {
+    image: url(:/resources/success_1.png);
+    background-color: transparent;
+}
+
+QLabel#imageLabel[state="-2"] {
+    image: url(:/resources/success_-2.png);
+    background-color: transparent;
+}
+
+QLabel#imageLabel[state="-3"] {
+    image: url(:/resources/painting_w.png);
+    background-color: transparent;
+}

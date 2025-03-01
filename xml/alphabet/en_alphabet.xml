@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alphabet>
+	<base>
+		<letter>a</letter>
+		<letter>i</letter>
+		<letter>u</letter>
+		<letter>e</letter>
+		<letter>o</letter>
+	</base>
+
+	<k_type>
+		<letter>ka</letter>
+		<letter>ki</letter>
+		<letter>ku</letter>
+		<letter>ke</letter>
+		<letter>ko</letter>
+	
+		<letter>ga</letter>
+		<letter>gi</letter>
+		<letter>gu</letter>
+		<letter>ge</letter>
+		<letter>go</letter>
+	</k_type>
+
+	<s_type>
+		<letter>sa</letter>
+		<letter>shi</letter>
+		<letter>su</letter>
+		<letter>se</letter>
+		<letter>so</letter>
+
+		<letter>za</letter>
+		<letter>ji</letter>
+		<letter>zu</letter>
+		<letter>ze</letter>
+		<letter>zo</letter>
+	</s_type>
+
+	<t_type>
+		<letter>ta</letter>
+		<letter>chi</letter>
+		<letter>tsu</letter>
+		<letter>te</letter>
+		<letter>to</letter>
+
+		<letter>da</letter>
+		<letter>di</letter>
+		<letter>dsu</letter>
+		<letter>de</letter>
+		<letter>do</letter>
+	</t_type>
+
+	<h_type>
+		<letter>ha</letter>
+		<letter>hi</letter>
+		<letter>fu</letter>
+		<letter>he</letter>
+		<letter>ho</letter>
+
+		<letter>ba</letter>
+		<letter>bi</letter>
+		<letter>bu</letter>
+		<letter>be</letter>
+		<letter>bo</letter>
+
+		<letter>pa</letter>
+		<letter>pi</letter>
+		<letter>pu</letter>
+		<letter>pe</letter>
+		<letter>po</letter>
+	</h_type>
+
+	<n_type>
+		<letter>na</letter>
+		<letter>ni</letter>
+		<letter>nu</letter>
+		<letter>ne</letter>
+		<letter>no</letter>
+	</n_type>
+
+	<m_type>
+		<letter>ma</letter>
+		<letter>mi</letter>
+		<letter>mu</letter>
+		<letter>me</letter>
+		<letter>mo</letter>
+	</m_type>
+
+	<y_type>
+		<letter>ya</letter>
+		<letter>yu</letter>
+		<letter>yo</letter>
+	</y_type>
+
+	<r_type>
+		<letter>ra</letter>
+		<letter>ri</letter>
+		<letter>ru</letter>
+		<letter>re</letter>
+		<letter>ro</letter>
+	</r_type>
+
+	<w_type>
+		<letter>wa</letter>
+		<letter>wo</letter>
+	</w_type>
+
+	<n>
+		<letter>n</letter>
+	</n>
+</Alphabet>

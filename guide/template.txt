@@ -1,0 +1,45 @@
+//template 0, simple statement
+私は可愛いです  == I am cute  //subject is object... a simple sentence
+私は忘れました == I forgot  //subject does object
+
+//template 1, simple question
+私は可愛いですか == am I cute?  //is subject object?
+私は忘れましたか == did I forget? //is subject doing object? note... this example smells incorrect
+
+
+//template 2, te form
+私は可愛くて賢い == I am cute and clever //subject is specifier+object, progressive
+私は寝て忘れました == I slept and forgot //subject is doing specifier+object, template 2, note "I fell asleep and forgot" is more correct translation, but not viable
+
+//template 3, te form question
+since question only adds か to end and english only changes order of words, no need to show example
+
+
+//template 4, specifier's location
+私は車に下 == I am at under car //subject is specifier location (object == location)
+
+//template 5, specifier's location question
+
+
+//template 6, action at specifier's location
+私は車て寝ますか == I am at under car //subject is doing object at specifier location (object == location)
+
+//template 7, action at specifier's location
+
+
+//template 8, and (listing)
+私は可愛い素晴らしい == I am cute and wonderful (all around a nice guy) //subject is specifier+object
+
+//template 9, and (listing) question
+
+
+//template 10, 's
+私は猫の友達 == I am cat's friend (all around a nice guy) //subject is specifier+object
+
+//template 11, 's question
+
+
+//template 12, liking
+私は猫が好きです == I like cats //subject likes object, no need for specifier, format 好き directly
+
+//template 13, liking question

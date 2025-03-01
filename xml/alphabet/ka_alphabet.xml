@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alphabet>
+	<base>
+		<letter>ア</letter>
+		<letter>イ</letter>
+		<letter>ウ</letter>
+		<letter>エ</letter>
+		<letter>オ</letter>
+	</base>
+
+	<k_type>
+		<letter>カ</letter>
+		<letter>キ</letter>
+		<letter>ク</letter>
+		<letter>ケ</letter>
+		<letter>コ</letter>
+		
+		<letter>ガ</letter>
+		<letter>ギ</letter>
+		<letter>グ</letter>
+		<letter>ゲ</letter>
+		<letter>ゴ</letter>
+	</k_type>
+
+	<s_type>
+		<letter>サ</letter>
+		<letter>シ</letter>
+		<letter>ス</letter>
+		<letter>セ</letter>
+		<letter>ソ</letter>
+		
+		<letter>ザ</letter>
+		<letter>ジ</letter>
+		<letter>ズ</letter>
+		<letter>ゼ</letter>
+		<letter>ゾ</letter>
+	</s_type>
+
+	<t_type>
+		<letter>タ</letter>
+		<letter>チ</letter>
+		<letter>ツ</letter>
+		<letter>テ</letter>
+		<letter>ト</letter>
+
+		<letter>ダ</letter>
+		<letter>ヂ</letter>
+		<letter>ヅ</letter>
+		<letter>デ</letter>
+		<letter>ド</letter>
+	</t_type>
+
+	<h_type>
+		<letter>ハ</letter>
+		<letter>ヒ</letter>
+		<letter>フ</letter>
+		<letter>ヘ</letter>
+		<letter>ホ</letter>
+
+		<letter>バ</letter>
+		<letter>ビ</letter>
+		<letter>ブ</letter>
+		<letter>ベ</letter>
+		<letter>ボ</letter>
+
+		<letter>パ</letter>
+		<letter>ピ</letter>
+		<letter>プ</letter>
+		<letter>ペ</letter>
+		<letter>ポ</letter>
+	</h_type>
+
+	<n_type>
+		<letter>ナ</letter>
+		<letter>ニ</letter>
+		<letter>ヌ</letter>
+		<letter>ネ</letter>
+		<letter>ノ</letter>
+	</n_type>
+
+	<m_type>
+		<letter>マ</letter>
+		<letter>ミ</letter>
+		<letter>ム</letter>
+		<letter>メ</letter>
+		<letter>モ</letter>
+	</m_type>
+
+	<y_type>
+		<letter>ヤ</letter>
+		<letter>ユ</letter>
+		<letter>ヨ</letter>
+	</y_type>
+
+	<r_type>
+		<letter>ラ</letter>
+		<letter>リ</letter>
+		<letter>ル</letter>
+		<letter>レ</letter>
+		<letter>ロ</letter>
+	</r_type>
+
+	<w_type>
+		<letter>ワ</letter>
+		<letter>ヲ</letter>
+	</w_type>
+
+	<n>
+		<letter>ン</letter>
+	</n>
+</Alphabet>
