@@ -84,6 +84,7 @@
         <item>おちゃ</item>
         <item>りょうり</item>
         <item>れすとらん</item>
+        <item>ぱん</item>
     </lesson_5>
     <lesson_6>
         <item>さん</item>
@@ -179,7 +180,10 @@
         <item>ぷうる</item>
         <item>ぴくにっく</item>
         <item>べんきょう</item>
-        <item>にほんご</item>
+        <item>
+            <meaning>にほんご</meaning>
+            <meaning>にほんじん</meaning>
+        </item>
     </lesson_15>
     <lesson_16>
         <item>めがね</item>

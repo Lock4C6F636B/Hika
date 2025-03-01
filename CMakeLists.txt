@@ -78,6 +78,7 @@ else()
             originwindow.h originwindow.cpp
             backEnd/template/ScriptureOfWest.h
             guide/lesson_guide.txt guide/template.txt
+            LICENSE
 
 
         )

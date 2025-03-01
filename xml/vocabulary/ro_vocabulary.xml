@@ -85,6 +85,7 @@
         <item>ocha</item>
         <item>ryouri</item>
         <item>resutoran</item>
+        <item>pan/item>
     </lesson_5>
     <lesson_6>
         <item>san</item>
@@ -178,6 +179,10 @@
         <item>puuru</item>
         <item>pikunikku</item>
         <item>benkyou</item>
+        <item>
+            <meaning>nihongo</meaning>
+            <meaning>nihonjin</meaning>
+        </item>
     </lesson_15>
     <lesson_16>
         <item>megane</item>
@@ -220,7 +225,7 @@
         <item>nihon</item>
     </lesson_24>
     <lesson_25>
-        <item>nail, talon</item>
+        <item>tsume</item>
         <item>jorogumo</item>
     </lesson_25>
 </Noun>

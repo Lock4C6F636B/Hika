@@ -88,6 +88,7 @@
         <item>お茶</item>
         <item>料理</item>
         <item>レストラン</item>
+        <item>パン</item>
     </lesson_5>
     <lesson_6>
         <item>さん</item>
@@ -184,7 +185,10 @@
         <item>プウル</item>
         <item>ピクニック</item>
         <item>勉強</item>
-        <item>日本語</item>
+        <item>
+            <meaning>日本語</meaning>
+            <meaning>日本人</meaning>
+        </item>
     </lesson_15>
     <lesson_16>
         <item>眼鏡</item>

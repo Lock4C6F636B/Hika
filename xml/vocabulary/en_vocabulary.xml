@@ -109,6 +109,7 @@
             <meaning>cuisine</meaning>
         </item>
         <item>restaurant</item>
+        <item>bread</item>
     </lesson_5>
     <lesson_6>
         <item>mister</item>
@@ -200,7 +201,7 @@
     <lesson_13>
         <item>room</item>
         <item>
-            <meaing>washing</meaing>
+            <meaning>washing</meaning>
             <meaning>laundry</meaning>
         </item>
     </lesson_13>
@@ -434,7 +435,7 @@
         <item>eight</item>
         <item>nine</item>
         <item>ten</item>
-        <ítem>hundred</ítem>
+        <item>hundred</item>
         <item>thousand</item>
         <item>ten thousand</item>
     </lesson_11>
