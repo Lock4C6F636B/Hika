@@ -46,6 +46,10 @@
     <lesson_15></lesson_15>
     <lesson_16></lesson_16>
     <lesson_17></lesson_17>
+    <lesson_18>
+    	<item>いってきます</item>
+    	<item>いってらっしゃい</item>
+    </lesson_18>
     <lesson_19></lesson_19>
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
@@ -108,8 +112,6 @@
             <meaning>はは</meaning>
             <meaning>まま</meaning>
         </item>
-        <item>おとさん</item>
-        <item>おかさん</item>
         <item>こども</item>
         <item>こ</item>
     </lesson_7>
@@ -147,7 +149,7 @@
         <item>ぷん</item>
     </lesson_11>
     <lesson_12>
-        <item>きよう</item>
+        <item>きょう</item>
         <item>きのう</item>
         <item>あした</item>
         <item>げつようび</item>
@@ -198,7 +200,7 @@
     <lesson_18>
         <item>ないふ</item>
         <item>おふろ</item>
-        <item>てえびり</item>
+        <item>てーぶる</item>
         <item>まど</item>
         <item>つくえ</item>
         <item>いす</item>
@@ -209,7 +211,10 @@
     <lesson_20>
         <item>てすと</item>
         <item>もんだい</item>
-        <item>にほんご</item>
+        <item>
+            <meaning>にほんご</meaning>
+            <meaning>にほんじん</meaning>
+        </item>
         <item>せんせい</item>
     </lesson_20>
     <lesson_21></lesson_21>

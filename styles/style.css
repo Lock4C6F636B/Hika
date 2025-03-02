@@ -104,3 +104,39 @@ QLabel#imageLabel[state="-3"] {
     image: url(:/resources/painting_w.png);
     background-color: transparent;
 }
+
+
+/*radio button indicator*/
+HiKa QRadioButton::indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+HiKa QRadioButton::indicator:unchecked {
+    background-color: transparent;
+    border: 2px solid #ff7f50;
+}
+
+HiKa QRadioButton::indicator:checked {
+    background-color: #ff7f50;
+    border: 2px solid white;
+}
+
+/* Hover effect */
+HiKa QRadioButton::indicator:hover {
+    border: 2px solid #ff9f70;
+}
+
+
+QPushButton#selectionProceedButton{
+    font-size:14pt;
+}
+
+QPushButton#selectionBackButton{
+    font-size:14pt;
+}
+
+QPushButton#selectionBabyButton{
+     font-size:14pt;
+}

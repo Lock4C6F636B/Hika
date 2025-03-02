@@ -46,7 +46,10 @@
     <lesson_15></lesson_15>
     <lesson_16></lesson_16>
     <lesson_17></lesson_17>
-    <lesson_18></lesson_18>
+    <lesson_18>
+    	<item>ittekimasu</item>
+    	<item>itterasshai</item>
+    </lesson_18>
     <lesson_19></lesson_19>
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
@@ -68,7 +71,7 @@
     <lesson_4>
         <item>okyakusan</item>
         <item>menyu</item>
-        <item>chumon</item>
+        <item>chuumon</item>
         <item>okaikei</item>
         <item>gurasu</item>
     </lesson_4>
@@ -93,7 +96,7 @@
         <item>tomodachi</item>
         <item>kuruma</item>
         <item>ie</item>
-        <item>hikoki</item>
+        <item>hikouki</item>
     </lesson_6>
     <lesson_7>
         <item>kazoku</item>
@@ -146,16 +149,16 @@
         <item>pun</item>
     </lesson_11>
     <lesson_12>
-        <item>kyo</item>
+        <item>kyou</item>
         <item>kino</item>
         <item>ashita</item>
-        <item>getsu-yobi</item>
-        <item>ka-yobi</item>
-        <item>sai-yobi</item>
-        <item>moku-yobi</item>
-        <item>kin-yobi</item>
-        <item>do-yobi</item>
-        <item>nichi-yobi</item>
+        <item>getsu-youbi</item>
+        <item>ka-youbi</item>
+        <item>sai-youbi</item>
+        <item>moku-youbi</item>
+        <item>kin-youbi</item>
+        <item>do-youbi</item>
+        <item>nichi-youbi</item>
         <item>yugata</item>
         <item>yoru</item>
         <item>getsu</item>
