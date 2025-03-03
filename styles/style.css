@@ -107,15 +107,18 @@ QLabel#imageLabel[state="-3"] {
 
 
 /*radio button indicator*/
+/*
 HiKa QRadioButton::indicator {
+    image: url(:/resources/おねんね猫さん.png)
     width: 20px;
     height: 20px;
     border-radius: 12px;
 }
+*/
 
 HiKa QRadioButton::indicator:unchecked {
     background-color: transparent;
-    border: 2px solid #ff7f50;
+    border-radius: 12px;
 }
 
 HiKa QRadioButton::indicator:checked {

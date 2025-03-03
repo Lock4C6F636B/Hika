@@ -30,7 +30,7 @@
     <item row="0" column="0">
      <widget class="QStackedWidget" name="windowPages">
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_0">
        <layout class="QGridLayout" name="gridLayout_2">
@@ -468,15 +468,6 @@
       </widget>
       <widget class="QWidget" name="page_3">
        <layout class="QGridLayout" name="gridLayout_6">
-        <item row="0" column="0" colspan="2">
-         <widget class="QLineEdit" name="lessonLineEdit">
-          <property name="font">
-           <font>
-            <pointsize>14</pointsize>
-           </font>
-          </property>
-         </widget>
-        </item>
         <item row="1" column="0">
          <layout class="QGridLayout" name="gridLayout">
           <item row="0" column="0">
@@ -1152,6 +1143,15 @@
            </widget>
           </item>
          </layout>
+        </item>
+        <item row="0" column="0" colspan="3">
+         <widget class="QLineEdit" name="lessonLineEdit">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item row="1" column="1">
          <layout class="QHBoxLayout" name="horizontalLayout_2">

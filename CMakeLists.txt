@@ -79,6 +79,7 @@ else()
             backEnd/template/ScriptureOfWest.h
             guide/lesson_guide.txt guide/template.txt
             LICENSE
+            README.md
 
 
         )

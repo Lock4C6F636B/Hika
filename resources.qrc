@@ -26,5 +26,18 @@
         <file>xml/grammar/engrammar/s.xml</file>
         <file>xml/grammar/engrammar/ly.xml</file>
         <file>xml/grammar/jpgrammar/adjective_exceptions.xml</file>
+        <file>resources/おねんね猫さん.png</file>
+    </qresource>
+    <qresource prefix="/audio_vocabulary">
+        <file>resources/audio_vocabulary/ゆれい/en_おはよう.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en_こにちわ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en_こんばわ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en_ひさしぶり.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en_よろしくおねがいします.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp_おはよう.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp_こにちわ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp_こんばわ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp_ひさしぶり.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp_よろしくおねがいします.mp3</file>
     </qresource>
 </RCC>
