@@ -29,15 +29,36 @@
         <file>resources/おねんね猫さん.png</file>
     </qresource>
     <qresource prefix="/audio_vocabulary">
-        <file>resources/audio_vocabulary/ゆれい/en_おはよう.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/en_こにちわ.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/en_こんばわ.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/en_ひさしぶり.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/en_よろしくおねがいします.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/jp_おはよう.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/jp_こにちわ.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/jp_こんばわ.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/jp_ひさしぶり.mp3</file>
-        <file>resources/audio_vocabulary/ゆれい/jp_よろしくおねがいします.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_ありがとうございます.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_いいえ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_うみません_m1.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_おねがいします.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_おはよう.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_こにちわ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_こんばわ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_すみません_m2.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_だいじょうぶ_m1.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_だいじょうぶ_m2.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_どういたしまして_m1.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_どういたしまして_m2.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_どうも.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_の.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_はい.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_ひさしぶり.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/en/en_よろしくおねがいします.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_あの.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_ありがとうございます.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_いいえ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_おねがいします.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_おはよう.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_こにちわ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_こんばわ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_すみません.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_だいじょうぶ.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_どういたしまして.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_どうも.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_はい.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_ひさしぶり.mp3</file>
+        <file>resources/audio_vocabulary/ゆれい/jp/jp_よろしくおねがいします.mp3</file>
     </qresource>
 </RCC>
