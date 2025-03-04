@@ -11,7 +11,10 @@
     <lesson_2>
         <item>thank you</item>
         <item>thanks</item>
-        <item>you're welcome</item>
+        <item>
+   	<meaning>you're welcome</meaning>
+   	<meaning>you are welcome</meaning>
+        </item>
         <item>please</item>
     </lesson_2>
     <lesson_3>
