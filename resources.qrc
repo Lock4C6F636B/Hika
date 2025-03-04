@@ -8,7 +8,6 @@
         <file>xml/alphabet/hi_alphabet.xml</file>
         <file>xml/alphabet/ka_alphabet.xml</file>
         <file>xml/vocabulary/en_vocabulary.xml</file>
-        <file>xml/vocabulary/jp_vocabulary.xml</file>
         <file>xml/vocabulary/jpf_vocabulary.xml</file>
         <file>xml/vocabulary/ro_vocabulary.xml</file>
         <file>resources/success_-2.png</file>
@@ -27,6 +26,7 @@
         <file>xml/grammar/engrammar/ly.xml</file>
         <file>xml/grammar/jpgrammar/adjective_exceptions.xml</file>
         <file>resources/おねんね猫さん.png</file>
+        <file>xml/vocabulary/jp_vocabulary.xml</file>
     </qresource>
     <qresource prefix="/audio_vocabulary">
         <file>resources/audio_vocabulary/ゆれい/en/en_ありがとうございます.mp3</file>
