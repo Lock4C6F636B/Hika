@@ -90,7 +90,7 @@ class Sentencer: private Origin<SentencerData>,private ScriptureOfWest{
 
         std::string harbinger() const noexcept override; //throw prompt to frontend
 
-        std::string divine_truth() const noexcept override; //throw correct answer to frontend
+        std::string divine_truth() const noexcept; //throw correct answer to frontend
 
 		//build_prompt japanese
         std::string JPbuild_prompt_0() const;
@@ -108,7 +108,7 @@ class Sentencer: private Origin<SentencerData>,private ScriptureOfWest{
         using Origin::success_count;
         using Origin::updateLib;
         using Origin::getDifficulty;
-        using ScriptureOfWest::to_string;
+        using ScriptureOfWest::string_sutra;
 
         //helper functions
         inline void append_str(const std::string str) const noexcept {

@@ -40,7 +40,7 @@
 #include "Vocabulary.h"
 #include <memory>
 //this class is manager for vocabularies
-enum class vocabSelect{ first,second};
+enum class vocabSelect{ first,second };
 
 class Library {
 	protected:

@@ -58,18 +58,15 @@ int InflectionMaster::start() {
         data.formal = formal_dist(gen);
     }
 
-    std::cerr<<"exitting start"<<std::endl;
-
     std::cout<<data<<std::endl;
 
     return 0;
 }
 
 bool InflectionMaster::compare(const std::string answer)  {
-    std::cerr<<"entering comapre<<"<<std::endl;
     //get true answer
     inscribe();
-    std::string correct_inflection = divine_truth();
+    std::string correct_inflection = string_sutra(library->getDifficulty());
 
     //comparasion (first part of statment) +logic to determine user's correctness combo
     if ((answer == correct_inflection) && (prev_suc == true)) {
@@ -92,13 +89,10 @@ bool InflectionMaster::compare(const std::string answer)  {
         suc_count--;
         return false;
     }
-
-    std::cerr<<"entering comapre<<"<<std::endl;
 }
 
 
 void InflectionMaster::inscribe() const noexcept {
-    std::cerr << "divine_truth called at " << std::time(nullptr) << std::endl;  // Add timestamp
      auto bend_it = [this](std::string word, const size_t &type, const size_t &format) -> std::string {
         //determine which formatting to use and use it
         if (library->getDifficulty() < 4) {
@@ -128,7 +122,6 @@ void InflectionMaster::inscribe() const noexcept {
             }
         }
 
-        std::cout<<word<<" correct inflection"<<std::endl;
         return word;
     };
 
@@ -150,9 +143,6 @@ void InflectionMaster::inscribe() const noexcept {
 
         } else buddha_sutras.push_back(bend_it(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second),data.obj_type,data.format)); //inflect specifier, if it is initialized)
     }
-
-
-    std::cerr<<"leving truth, "<<to_string(library->getDifficulty())<<std::endl; //debug, show correct answer
 }
 
 

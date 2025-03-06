@@ -30,7 +30,7 @@ public:
         else return library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second);
     }
 
-    std::string divine_truth() const noexcept override { return to_string(library->getDifficulty()); }
+    //std::string divine_truth() const noexcept override { return string_sutra(library->getDifficulty()); }
 
     std::string prophecy() const noexcept; //prompt user to inflect
 
@@ -44,5 +44,5 @@ public:
     using Origin::success_count;
     using Origin::updateLib;
     using Origin::getDifficulty;
-    using ScriptureOfWest::to_string;
+    using ScriptureOfWest::string_sutra;
 };

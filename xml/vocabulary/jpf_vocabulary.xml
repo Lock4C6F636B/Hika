@@ -24,7 +24,7 @@
     <lesson_4></lesson_4>
     <lesson_5></lesson_5>
     <lesson_6>
-        <item>久しぶりですね</item>
+        <item>久しぶり</item>
         <item>どうぞ</item>
         <item>いただきます</item>
         <item>大丈夫</item>
@@ -95,7 +95,10 @@
     </lesson_5>
     <lesson_6>
         <item>さん</item>
-        <item>皆さん</item>
+        <item>
+        <meaning>皆さん</meaning>
+        <meaning>皆</meaning>
+        </item>
         <item>友達</item>
         <item>車</item>
         <item>家</item>
@@ -268,7 +271,7 @@
     </lesson_5>
     <lesson_6>
         <item>
-            <meaing>凄い</meaing>
+            <meaning>凄い</meaning>
             <meaning>すごい</meaning>
         </item>
         <item>
@@ -397,7 +400,7 @@
         <item>八</item>
         <item>九</item>
         <item>十</item>
-        <ítem>百</ítem>
+        <item>百</item>
         <item>千</item>
         <item>万</item>
     </lesson_11>
@@ -449,7 +452,7 @@
         <item>読む</item>
         <item>書く</item>
         <item>勉強する</item>
-        <meaning>日本語</meaning>
+        <item>脱ぐ</item>
     </lesson_15>
     <lesson_16>
         <item>脱ぐ</item>
@@ -468,9 +471,7 @@
         <item>医者</item>
     </lesson_19>
     <lesson_20>
-        <item>テスト</item>
         <item>立つ</item>
-        <item>日本語</item>
     </lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>

@@ -22,14 +22,6 @@ WBWindow::WBWindow(QWidget *parent, const std::shared_ptr<Library> library, cons
 
 WBWindow::~WBWindow(){}
 
-void WBWindow::showEvent(QShowEvent* event){
-    OriginWindow::showEvent(event);
-
-    //start or refresh backend
-    word_bringer->start();
-    ui->harbingerLabel->setText(QString::fromStdString(word_bringer->harbinger())); //show backend output
-}
-
 void WBWindow::wordbringer() noexcept{
     //run the program
     if(word_bringer->compare(ui->inputLineEdit->text().toStdString()) == false){
@@ -97,5 +89,13 @@ void WBWindow::success(const int success_count) noexcept {//print out success
             ui->imageLabel->style()->polish(ui->imageLabel);
         });
     }
+}
 
-};
+
+void WBWindow::showEvent(QShowEvent* event){
+    OriginWindow::showEvent(event);
+
+    //start or refresh backend
+    word_bringer->start();
+    ui->harbingerLabel->setText(QString::fromStdString(word_bringer->harbinger())); //show backend output
+}

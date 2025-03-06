@@ -41,7 +41,7 @@ void InflectWindow::inflectionmaster() noexcept{
     //run the program
     if(inflection_master->compare(ui->inputLineEdit->text().toStdString()) == false){
         ui->answerLabel->setStyleSheet("background-color: rgb(255, 85, 127); color: rgb(170, 0, 0);");
-        ui->answerLabel->setText("Correct word: " + (QString::fromStdString(inflection_master->divine_truth())));
+        ui->answerLabel->setText("Correct word: " + (QString::fromStdString(inflection_master->string_sutra(inflection_master->getDifficulty()))));
 
         QTimer::singleShot(12000, [this]() { //clear answer after while
             ui->answerLabel->clear();

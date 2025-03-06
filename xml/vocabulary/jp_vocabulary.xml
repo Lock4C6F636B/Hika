@@ -92,7 +92,10 @@
     </lesson_5>
     <lesson_6>
         <item>さん</item>
-        <item>みなさん</item>
+        <item>
+        <meaning>みな</meaning>	
+        <meaning>みなさん</meaning>
+        </item>
         <item>ともだち</item>
         <item>くるま</item>
         <item>いえ</item>

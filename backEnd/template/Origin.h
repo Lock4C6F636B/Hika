@@ -101,7 +101,7 @@ public:
     //obviously function to ouput backend prompt
     virtual std::string harbinger() const noexcept = 0; //output first vocab to backend
 
-    virtual std::string divine_truth() const noexcept = 0; //output second part to backend
+    //virtual std::string divine_truth() const noexcept = 0; //output second part to backend
 
     int success_count() const noexcept { return suc_count; }
 

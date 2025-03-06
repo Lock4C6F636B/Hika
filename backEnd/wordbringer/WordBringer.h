@@ -55,7 +55,7 @@ public:
         return library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::first);
     }
 
-    std::string divine_truth() const noexcept override;
+    std::string divine_truth() const noexcept;
 
     using Origin::success_count;
     using Origin::updateLib;
