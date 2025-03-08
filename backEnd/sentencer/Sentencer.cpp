@@ -81,6 +81,8 @@ int Sentencer::start() {
     std::discrete_distribution<> part(particle_weights.begin(), particle_weights.end());
     data.particle = part(gen);
 
+    data.formal = 1;
+
     //debug, to see what data generated
     std::cerr<<data<<std::endl;
 
@@ -93,8 +95,8 @@ bool Sentencer::compare(const std::string answer)  {
     inscribe(); //store prompt, build correct sentences
 
 	//compare
-	for (const std::string& sentence : compar_sent) {
-        if (answer == sentence) {
+    for (size_t i = 0; i < buddha_sutras.size(); i++) {
+        if (answer == string_sutra(library->getDifficulty(),i)) {
 			correct = true;
 		}
 	}
@@ -130,71 +132,71 @@ void Sentencer::inscribe() const noexcept {
             JPbuild_sentence_0();
         } else ENbuild_sentence_0();
         return;
-    case 1:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_1();
-        } else ENbuild_sentence_1();
-        return;
-    case 2:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_2();
-        } else ENbuild_sentence_2();
-        return;
-    case 3:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_3();
-        } else ENbuild_sentence_3();
-        return;
-    case 4:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_4();
-        } else ENbuild_sentence_4();
-        return;
-    case 5:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_5();
-        } else ENbuild_sentence_5();
-        return;
-    case 6:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_6();
-        } else ENbuild_sentence_6();
-        return;
-    case 7:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_7();
-        } else ENbuild_sentence_7();
-        return;
-    case 8:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_8();
-        } else ENbuild_sentence_8();
-        return;
-    case 9:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_9();
-        } else ENbuild_sentence_9();
-        return;
-    case 10:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_10();
-        } else ENbuild_sentence_10();
-        return;
-    case 11:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_11();
-        } else ENbuild_sentence_11();
-        return;
-    case 12:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_12();
-        } else ENbuild_sentence_12();
-        return;
-    case 13:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_13();
-        } else ENbuild_sentence_13();
-        return;
+    //case 1:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_1();
+    //    } else ENbuild_sentence_1();
+    //    return;
+    //case 2:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_2();
+    //    } else ENbuild_sentence_2();
+    //    return;
+    //case 3:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_3();
+    //    } else ENbuild_sentence_3();
+    //    return;
+    //case 4:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_4();
+    //    } else ENbuild_sentence_4();
+    //    return;
+    //case 5:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_5();
+    //    } else ENbuild_sentence_5();
+    //    return;
+    //case 6:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_6();
+    //    } else ENbuild_sentence_6();
+    //    return;
+    //case 7:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_7();
+    //    } else ENbuild_sentence_7();
+    //    return;
+    //case 8:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_8();
+    //    } else ENbuild_sentence_8();
+    //    return;
+    //case 9:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_9();
+    //    } else ENbuild_sentence_9();
+    //    return;
+    //case 10:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_10();
+    //    } else ENbuild_sentence_10();
+    //    return;
+    //case 11:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_11();
+    //    } else ENbuild_sentence_11();
+    //    return;
+    //case 12:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_12();
+    //    } else ENbuild_sentence_12();
+    //    return;
+    //case 13:
+    //    if(library->getDifficulty() < 4){
+    //        JPbuild_sentence_13();
+    //    } else ENbuild_sentence_13();
+    //    return;
     }
 }
 
@@ -214,71 +216,71 @@ std::string Sentencer::harbinger() const noexcept{
             prompt = ENbuild_prompt_0();
         } else prompt = JPbuild_prompt_0();
         break;
-    case 1:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_1();
-        } else prompt = JPbuild_prompt_1();
-        break;
-    case 2:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_2();
-        } else prompt = JPbuild_prompt_2();
-        break;
-    case 3:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_3();
-        } else prompt = JPbuild_prompt_3();
-        break;
-    case 4:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_4();
-        } else prompt = JPbuild_prompt_4();
-        break;
-    case 5:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_5();
-        } else prompt = JPbuild_prompt_5();
-        break;
-    case 6:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_6();
-        } else prompt = JPbuild_prompt_6();
-        break;
-    case 7:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_7();
-        } else prompt = JPbuild_prompt_7();
-        break;
-    case 8:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_8();
-        } else prompt = JPbuild_prompt_8();
-        break;
-    case 9:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_9();
-        } else prompt = JPbuild_prompt_9();
-        break;
-    case 10:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_10();
-        } else prompt = JPbuild_prompt_10();
-        break;
-    case 11:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_11();
-        } else prompt = JPbuild_prompt_11();
-        break;
-    case 12:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_12();
-        } else prompt = JPbuild_prompt_12();
-        break;
-    case 13:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_13();
-        } else prompt = JPbuild_prompt_13();
-        break;
+    //case 1:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_1();
+    //    } else prompt = JPbuild_prompt_1();
+    //    break;
+    //case 2:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_2();
+    //    } else prompt = JPbuild_prompt_2();
+    //    break;
+    //case 3:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_3();
+    //    } else prompt = JPbuild_prompt_3();
+    //    break;
+    //case 4:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_4();
+    //    } else prompt = JPbuild_prompt_4();
+    //    break;
+    //case 5:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_5();
+    //    } else prompt = JPbuild_prompt_5();
+    //    break;
+    //case 6:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_6();
+    //    } else prompt = JPbuild_prompt_6();
+    //    break;
+    //case 7:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_7();
+    //    } else prompt = JPbuild_prompt_7();
+    //    break;
+    //case 8:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_8();
+    //    } else prompt = JPbuild_prompt_8();
+    //    break;
+    //case 9:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_9();
+    //    } else prompt = JPbuild_prompt_9();
+    //    break;
+    //case 10:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_10();
+    //    } else prompt = JPbuild_prompt_10();
+    //    break;
+    //case 11:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_11();
+    //    } else prompt = JPbuild_prompt_11();
+    //    break;
+    //case 12:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_12();
+    //    } else prompt = JPbuild_prompt_12();
+    //    break;
+    //case 13:
+    //    if(library->getDifficulty() < 4){
+    //        prompt = ENbuild_prompt_13();
+    //    } else prompt = JPbuild_prompt_13();
+    //    break;
     }
 
     return prompt;
@@ -286,10 +288,11 @@ std::string Sentencer::harbinger() const noexcept{
 
 
 
+
 //sentence template builder-----------------------------------------------------------------------------------------------------------------------------------
+//JAPANESE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //build japanese prompt sentence
 std::string Sentencer::JPbuild_prompt_0() const {
-    //add subject
     std::string prompt;
 
     //add subject to sentence
@@ -297,6 +300,7 @@ std::string Sentencer::JPbuild_prompt_0() const {
         prompt = jpgrammar::subjectify(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first), data.sub_type);
     } else prompt = library->pick(data.sub_type, data.sub_index, data.sub_mean,vocabSelect::first);
 
+    //debug
     std::cout<<"jp prompt start "<<library->pick(data.obj_type,data.obj_index,data.obj_mean,vocabSelect::first)<<", "<<library->pick(data.sub_type,data.sub_index,data.sub_mean,vocabSelect::first)<<std::endl;
 
     //add particle
@@ -305,6 +309,7 @@ std::string Sentencer::JPbuild_prompt_0() const {
     //add object to sentence
     switch (data.obj_type){
     case 2: {
+        std::cout<<"i see adjective"<<std::endl;
         std::string adjective = library->pick(data.obj_type, data.obj_index, data.obj_mean,vocabSelect::first);
         prompt += jpgrammar::format_adj(adjective,data.format,data.formal);
         break;
@@ -324,14 +329,15 @@ std::string Sentencer::JPbuild_prompt_0() const {
     return prompt;
 };
 
+
 //build japanese sentence answers
 int Sentencer::JPbuild_sentence_0() const {
-    prepare_compar(); //important
+    buddha_sutras.push_back(std::vector<std::string>()); //important to do
 
 	//lambda to add each meaning of word to each comparasion sentences
-	auto add_word = [this](const size_t& type, const size_t& index, bool is_last) {
-		std::vector<std::string> new_sentences;
-		for (const auto& sentence : compar_sent) { //run through already generated
+    auto add_word = [this](const size_t &type, const size_t& index, bool is_last) {
+        std::vector<std::vector<std::string>> new_sentences;
+        for (const auto &sentence : buddha_sutras) { //run through already generated
             for (size_t mean = 0; mean < library->mean_size(type, index,vocabSelect::second); ++mean) { //run through available meanings
                 std::string word = library->pick(type, index, mean, vocabSelect::second); //pick word from database
 				if (is_last) { //object of sentence need formatting
@@ -351,30 +357,47 @@ int Sentencer::JPbuild_sentence_0() const {
                     if (type == 5) { word = jpgrammar::subjectify(word, data.sub_type); //adjectives and verbs need to be subjetified
 					}
 				}
-				new_sentences.push_back(sentence + word); //put each meaning into index
+                std::vector<std::string> new_sentence = sentence;
+                new_sentence.push_back(word);//put each meaning into index
+                new_sentences.push_back(new_sentence);
 			}
 		}
-		compar_sent = std::move(new_sentences);
+        buddha_sutras = std::move(new_sentences);
 	};
 
 
 	//add subject
 	add_word(data.sub_type, data.sub_index,false); //add subject to strings of sentences
 
+
 	//add particle
-	if (data.particle == 0 || data.particle == 1) {
-		std::vector<std::string> stand_in; //stand in for parsing second particle
-		for (const std::string& sentence : compar_sent) { //parse second particle into stand in
-			stand_in.push_back(sentence + particles[0]);
-			stand_in.push_back(sentence + particles[1]);
-		}
-		compar_sent = std::move(stand_in);
-	}
-	else{
-		for (std::string& sentence : compar_sent) {
-			sentence += particles[data.particle];
-		}
-	}
+    if (data.particle == 0 || data.particle == 1) {
+        std::vector<std::vector<std::string>> with_particle;
+
+        for (const auto& sentence : buddha_sutras) {
+            //store copy with は
+            {
+                std::vector<std::string> new_sentence = sentence;
+                new_sentence.push_back(particles[0]);
+                with_particle.push_back(new_sentence);
+            }
+
+            //store copy with が
+            {
+                std::vector<std::string> new_sentence = sentence;
+                new_sentence.push_back(particles[1]);
+                with_particle.push_back(new_sentence);
+            }
+        }
+
+        buddha_sutras = std::move(with_particle);
+    } else {
+        // Add the specified particle to all sentences
+        for (auto& sentence : buddha_sutras) {
+            sentence.push_back(particles[data.particle]);
+        }
+    }
+
 
 	//add object
 	add_word(data.obj_type, data.obj_index,true); //add subject to strings of sentences
@@ -383,6 +406,10 @@ int Sentencer::JPbuild_sentence_0() const {
 	return 0;
 }
 
+
+
+
+//ENGLISH--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //build english prompt sentence
 std::string Sentencer::ENbuild_prompt_0() const {
 	std::string prompt;
@@ -392,6 +419,8 @@ std::string Sentencer::ENbuild_prompt_0() const {
     if (data.sub_type == 5) {
         prompt = engrammar::subjectify(prompt); //transform if verb
     }
+
+    prompt += " "; //add space
 
     //add to be
     if (data.obj_type != 5){ //noun+verb dont have "to be"
@@ -418,50 +447,52 @@ std::string Sentencer::ENbuild_prompt_0() const {
 	return prompt;
 };
 
+
 //build english sentence answers
 int Sentencer::ENbuild_sentence_0() const{
-    prepare_compar(); //important
+    buddha_sutras.push_back(std::vector<std::string>()); //important to do
 
     //lambda to add each meaning of word to each comparasion sentences
     auto add_word = [this](const size_t& type, const size_t& index,bool is_last) {
-        std::vector<std::string> new_sentences;
-        for (const auto& sentence : compar_sent) { //run through already generated
+        std::vector<std::vector<std::string>> new_sentences;
+        for (const auto &sentence : buddha_sutras) { //run through already generated
             for (size_t mean = 0; mean < library->mean_size(type, index,vocabSelect::second); ++mean) { //run through available meanings
                 std::string word = library->pick(type, index, mean, vocabSelect::second); //pick word from database
-
-
                 if((!is_last) && type == 5){ //ensure verb is subjectified
-                    std::cerr<<"subjetiying, type "<<type<<std::endl;
                     word = engrammar::ing(word);
                 }
                 else if(is_last && type == 5){ //ensure verb is bended
                     word = engrammar::format_verb(word,data.format,library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second));
                 }
 
-                new_sentences.push_back(sentence + word); //put each meaning into index
+                std::vector<std::string> new_sentence = sentence;
+                new_sentence.push_back(word);//put each meaning into index
+                new_sentences.push_back(new_sentence); //put each meaning into index
             }
         }
-        compar_sent = std::move(new_sentences);
+        buddha_sutras = std::move(new_sentences);
     };
 
 
     //add subject
     add_word(data.sub_type, data.sub_index, false); //add subject to strings of sentences
-    append_str(" "); //add space
 
     //add to be or do
-    for(auto& sentence : compar_sent){
-        std::string subject = library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second); //pick word from database, again... i know frustrating to allocate yet another variable
+    for(auto& sentence : buddha_sutras){
         if(data.obj_type != 5){
-            sentence += engrammar::be(subject,data.format); //if not verb, add "to be"
+            sentence.push_back(engrammar::be(buddha_sutras[0][data.sub_mean],data.format)); //if not verb, add "to be"
         }
     }
-
-    append_str(" "); //add space
 
     //add object
     add_word(data.obj_type, data.obj_index, true); //add subject to strings of sentences
 
+
+    if (data.particle == 2) {
+        for (auto& sentence : buddha_sutras) {
+            sentence.push_back("too");
+        }
+    }
 
     return 0;
 }

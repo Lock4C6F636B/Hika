@@ -126,7 +126,7 @@ std::string jpgrammar::format_verb(std::string& verb, const size_t& format, cons
 }
 
 std::string jpgrammar::format_adj(std::string& adjective, const size_t& format, const bool &formal) { //!!!!format 4 is handled by should_adj
-    if (adjective.empty() || format > 5) { return "redudant, note 4 is not directly supported"; } //if verb is empty, exit
+    if (adjective.empty() || format > 5 || format == 4) { return "redudant, note 4 is not directly supported"; } //if verb is empty, exit
 
 	//skip all logic if format is present positive
     if (format == 0) {
