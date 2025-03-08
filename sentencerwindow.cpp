@@ -40,7 +40,7 @@ void SentencerWindow::sentenceru() noexcept{
     if(sentencer->compare(ui->inputLineEdit->text().toStdString()) == false){
         ui->answerLabel->setStyleSheet("background-color: rgb(255, 85, 127); color: rgb(170, 0, 0);");
         ui->answerLabel->setTextFormat(Qt::RichText); // Enable rich text interpretation
-        ui->answerLabel->setText("Possible sentences:<br>" + QString::fromStdString(sentencer->divine_truth()));
+        ui->answerLabel->setText("Possible sentences:<br>" + QString::fromStdString(sentencer->string_sutra(sentencer->getDifficulty())));
 
         QTimer::singleShot(24000, [this]() { //clear answer after while
             ui->answerLabel->clear();

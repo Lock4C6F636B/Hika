@@ -21,7 +21,7 @@ public:
 
     bool compare(const std::string answer) override; //compare the word with user answer
 
-    inline void inscribe() const noexcept override;
+    inline void inscribe() const noexcept override; //make correct answer
 
     inline std::string harbinger() const noexcept override {
         if(data.specif_type != -1){
@@ -29,8 +29,6 @@ public:
         }
         else return library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second);
     }
-
-    //std::string divine_truth() const noexcept override { return string_sutra(library->getDifficulty()); }
 
     std::string prophecy() const noexcept; //prompt user to inflect
 

@@ -86,23 +86,74 @@ class Sentencer: private Origin<SentencerData>,private ScriptureOfWest{
 
         bool compare(const std::string answer) override; //compare the word with user answwer
 
-        inline void inscribe() const noexcept override;
-
         std::string harbinger() const noexcept override; //throw prompt to frontend
 
-        std::string divine_truth() const noexcept; //throw correct answer to frontend
+        inline void inscribe() const noexcept override; //make correct answer
 
 		//build_prompt japanese
         std::string JPbuild_prompt_0() const;
+        std::string JPbuild_prompt_1() const;
+        std::string JPbuild_prompt_2() const;
+        std::string JPbuild_prompt_3() const;
+        std::string JPbuild_prompt_4() const;
+        std::string JPbuild_prompt_5() const;
+        std::string JPbuild_prompt_6() const;
+        std::string JPbuild_prompt_7() const;
+        std::string JPbuild_prompt_8() const;
+        std::string JPbuild_prompt_9() const;
+        std::string JPbuild_prompt_10() const;
+        std::string JPbuild_prompt_11() const;
+        std::string JPbuild_prompt_12() const;
+        std::string JPbuild_prompt_13() const;
 
 		//build comparassion sentences in japanese
         int JPbuild_sentence_0() const;
+        int JPbuild_sentence_1() const;
+        int JPbuild_sentence_2() const;
+        int JPbuild_sentence_3() const;
+        int JPbuild_sentence_4() const;
+        int JPbuild_sentence_5() const;
+        int JPbuild_sentence_6() const;
+        int JPbuild_sentence_7() const;
+        int JPbuild_sentence_8() const;
+        int JPbuild_sentence_9() const;
+        int JPbuild_sentence_10() const;
+        int JPbuild_sentence_11() const;
+        int JPbuild_sentence_12() const;
+        int JPbuild_sentence_13() const;
+
 
 		//build_prompt in english
         std::string ENbuild_prompt_0() const;
+        std::string ENbuild_prompt_1() const;
+        std::string ENbuild_prompt_2() const;
+        std::string ENbuild_prompt_3() const;
+        std::string ENbuild_prompt_4() const;
+        std::string ENbuild_prompt_5() const;
+        std::string ENbuild_prompt_6() const;
+        std::string ENbuild_prompt_7() const;
+        std::string ENbuild_prompt_8() const;
+        std::string ENbuild_prompt_9() const;
+        std::string ENbuild_prompt_10() const;
+        std::string ENbuild_prompt_11() const;
+        std::string ENbuild_prompt_12() const;
+        std::string ENbuild_prompt_13() const;
 	
 		//build comparassion sentences in english
         int ENbuild_sentence_0() const;
+        int ENbuild_sentence_1() const;
+        int ENbuild_sentence_2() const;
+        int ENbuild_sentence_3() const;
+        int ENbuild_sentence_4() const;
+        int ENbuild_sentence_5() const;
+        int ENbuild_sentence_6() const;
+        int ENbuild_sentence_7() const;
+        int ENbuild_sentence_8() const;
+        int ENbuild_sentence_9() const;
+        int ENbuild_sentence_10() const;
+        int ENbuild_sentence_11() const;
+        int ENbuild_sentence_12() const;
+        int ENbuild_sentence_13() const;
 
 
         using Origin::success_count;

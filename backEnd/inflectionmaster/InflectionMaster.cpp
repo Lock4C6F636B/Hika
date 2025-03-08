@@ -66,7 +66,7 @@ int InflectionMaster::start() {
 bool InflectionMaster::compare(const std::string answer)  {
     //get true answer
     inscribe();
-    std::string correct_inflection = string_sutra(library->getDifficulty());
+    std::string correct_inflection = string_sutra(library->getDifficulty(),9);
 
     //comparasion (first part of statment) +logic to determine user's correctness combo
     if ((answer == correct_inflection) && (prev_suc == true)) {
@@ -125,23 +125,24 @@ void InflectionMaster::inscribe() const noexcept {
         return word;
     };
 
+    buddha_sutras.push_back(std::vector<std::string>());
 
     if(library->getDifficulty() < 4){
-        if(data.specif_type != -1){buddha_sutras.push_back(bend_it(library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::second),data.specif_type,data.specif_format));} //inflect specfier
-        buddha_sutras.push_back(bend_it(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second),data.obj_type,data.format)); //inflect specifier, if it is initialized)
+        if(data.specif_type != -1){buddha_sutras[0].push_back(bend_it(library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::second),data.specif_type,data.specif_format));} //inflect specfier
+        buddha_sutras[0].push_back(bend_it(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second),data.obj_type,data.format)); //inflect specifier, if it is initialized)
     }
     else{
         //if specificier is used then formatting is actually need to be done mostly on specifier
         if(data.specif_type != -1){
-            buddha_sutras.push_back(bend_it(library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::second),data.specif_type,data.format)); //format first word by overall format
+            buddha_sutras[0].push_back(bend_it(library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::second),data.specif_type,data.format)); //format first word by overall format
 
-            if(data.specif_type != 2 || data.obj_type != 5){ buddha_sutras.push_back("and");} //if not ly add "and"
+            if(data.specif_type != 2 || data.obj_type != 5){ buddha_sutras[0].push_back("and");} //if not ly add "and"
 
             if(data.obj_type == 5 && (data.format == 0 || data.format == 2)){ //if second word is verb and does not use to be or do, format second one
-                buddha_sutras.push_back(bend_it(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second),data.obj_type,data.format));
-            } else buddha_sutras.push_back(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second));
+                buddha_sutras[0].push_back(bend_it(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second),data.obj_type,data.format));
+            } else buddha_sutras[0].push_back(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second));
 
-        } else buddha_sutras.push_back(bend_it(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second),data.obj_type,data.format)); //inflect specifier, if it is initialized)
+        } else buddha_sutras[0].push_back(bend_it(library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::second),data.obj_type,data.format)); //inflect specifier, if it is initialized)
     }
 }
 

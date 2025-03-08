@@ -3,10 +3,11 @@
 //generate data for sentence
 int Sentencer::start() {
     data.reset_specifier(); //reset specifier before using, default value -1 is very important
-    buddha_sutras.clear();
+    buddha_sutras.clear(); //reset vector of correct answers
     std::random_device rd; //set rng
     std::mt19937 gen(rd());
 
+    //HERE REWRITE TO 0,1 WHEN TE FORM IS FUNCTIONAL
     //pick template type
     std::uniform_int_distribution<uint8_t> template_dist(0, 0);  //number of template sentences, currently i have only one
     data.template_type = template_dist(gen);
@@ -61,17 +62,17 @@ int Sentencer::start() {
     data.sub_mean = gen_num_to(library->mean_size(data.sub_type, data.sub_index, vocabSelect::first));
     data.obj_mean = gen_num_to(library->mean_size(data.obj_type, data.obj_index, vocabSelect::first));
 
-    //if initialized generate index, meaning
+    //if initialized generate index, meaning... also generate format for the specifier
     if(data.specif_type != -1){
         data.specif_index = gen_num_to(library->type_size(data.specif_type, vocabSelect::first));
         data.specif_mean = gen_num_to(library->mean_size(data.obj_type, data.specif_index, vocabSelect::first));
-    }
 
-	//generate format
-    if (data.template_type == 2) {
+        //this smells funky, CHECK BACK HERE WHEN YOU HAVE MORE CLARITY
         std::uniform_int_distribution<> specif_format_dist(0, 5); //format for specifier, including te form
         data.format = specif_format_dist(gen);
-	}
+    }
+
+    //generate format
     std::uniform_int_distribution<> format_dist(0, 4); //format for object
     data.format = format_dist(gen);
 	
@@ -151,6 +152,7 @@ std::string Sentencer::harbinger() const noexcept{
     return prompt;
 }
 
+/*
 std::string Sentencer::divine_truth() const noexcept { //throw correct string to frontend
     std::string answer;
     for(size_t i = 0; i < compar_sent.size(); i++){
@@ -162,7 +164,7 @@ std::string Sentencer::divine_truth() const noexcept { //throw correct string to
 
     return answer;
 }
-
+*/
 
 
 //sentence template builder-----------------------------------------------------------------------------------------------------------------------------------
