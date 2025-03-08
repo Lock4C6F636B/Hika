@@ -81,6 +81,7 @@ int Sentencer::start() {
     std::discrete_distribution<> part(particle_weights.begin(), particle_weights.end());
     data.particle = part(gen);
 
+    //debug, to see what data generated
     std::cerr<<data<<std::endl;
 
     return 0;
@@ -123,19 +124,77 @@ bool Sentencer::compare(const std::string answer)  {
 
 void Sentencer::inscribe() const noexcept {
     //build sentences
-    if (library->getDifficulty() < 4) { //call appropriatately based on difficulty
-        switch(data.template_type){ //add more templates when their functions will be implemented
-        default:
+    switch(data.template_type){ //add more templates when their functions will be implemented
+    case 0:
+        if(library->getDifficulty() < 4){
             JPbuild_sentence_0();
-            break;
-        }
-    }
-    else {
-        switch(data.template_type){
-        default:
-            ENbuild_sentence_0();
-            break;
-        }
+        } else ENbuild_sentence_0();
+        return;
+    case 1:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_1();
+        } else ENbuild_sentence_1();
+        return;
+    case 2:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_2();
+        } else ENbuild_sentence_2();
+        return;
+    case 3:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_3();
+        } else ENbuild_sentence_3();
+        return;
+    case 4:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_4();
+        } else ENbuild_sentence_4();
+        return;
+    case 5:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_5();
+        } else ENbuild_sentence_5();
+        return;
+    case 6:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_6();
+        } else ENbuild_sentence_6();
+        return;
+    case 7:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_7();
+        } else ENbuild_sentence_7();
+        return;
+    case 8:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_8();
+        } else ENbuild_sentence_8();
+        return;
+    case 9:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_9();
+        } else ENbuild_sentence_9();
+        return;
+    case 10:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_10();
+        } else ENbuild_sentence_10();
+        return;
+    case 11:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_11();
+        } else ENbuild_sentence_11();
+        return;
+    case 12:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_12();
+        } else ENbuild_sentence_12();
+        return;
+    case 13:
+        if(library->getDifficulty() < 4){
+            JPbuild_sentence_13();
+        } else ENbuild_sentence_13();
+        return;
     }
 }
 
@@ -149,22 +208,82 @@ std::string Sentencer::harbinger() const noexcept{
         prompt = JPbuild_prompt_0();
     }
 
+    switch(data.template_type){
+    case 0:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_0();
+        } else prompt = JPbuild_prompt_0();
+        break;
+    case 1:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_1();
+        } else prompt = JPbuild_prompt_1();
+        break;
+    case 2:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_2();
+        } else prompt = JPbuild_prompt_2();
+        break;
+    case 3:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_3();
+        } else prompt = JPbuild_prompt_3();
+        break;
+    case 4:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_4();
+        } else prompt = JPbuild_prompt_4();
+        break;
+    case 5:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_5();
+        } else prompt = JPbuild_prompt_5();
+        break;
+    case 6:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_6();
+        } else prompt = JPbuild_prompt_6();
+        break;
+    case 7:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_7();
+        } else prompt = JPbuild_prompt_7();
+        break;
+    case 8:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_8();
+        } else prompt = JPbuild_prompt_8();
+        break;
+    case 9:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_9();
+        } else prompt = JPbuild_prompt_9();
+        break;
+    case 10:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_10();
+        } else prompt = JPbuild_prompt_10();
+        break;
+    case 11:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_11();
+        } else prompt = JPbuild_prompt_11();
+        break;
+    case 12:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_12();
+        } else prompt = JPbuild_prompt_12();
+        break;
+    case 13:
+        if(library->getDifficulty() < 4){
+            prompt = ENbuild_prompt_13();
+        } else prompt = JPbuild_prompt_13();
+        break;
+    }
+
     return prompt;
 }
 
-/*
-std::string Sentencer::divine_truth() const noexcept { //throw correct string to frontend
-    std::string answer;
-    for(size_t i = 0; i < compar_sent.size(); i++){
-        answer += compar_sent[i];
-        if(i < compar_sent.size() - 1){ // Changed condition to use vector size
-            answer += "<br>"; // Using HTML line break
-        }
-    }
-
-    return answer;
-}
-*/
 
 
 //sentence template builder-----------------------------------------------------------------------------------------------------------------------------------

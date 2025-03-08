@@ -66,7 +66,7 @@ int InflectionMaster::start() {
 bool InflectionMaster::compare(const std::string answer)  {
     //get true answer
     inscribe();
-    std::string correct_inflection = string_sutra(library->getDifficulty(),9);
+    std::string correct_inflection = string_sutra(library->getDifficulty(),0);
 
     //comparasion (first part of statment) +logic to determine user's correctness combo
     if ((answer == correct_inflection) && (prev_suc == true)) {
