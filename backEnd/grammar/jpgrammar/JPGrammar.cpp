@@ -39,7 +39,7 @@ std::string jpgrammar::format_verb(std::string& verb, const size_t& format, cons
 	
 
     if (format == 5){ //handle case of te form
-        if (auto transformed = verb_teTransformMap.find_replace(lastChar)) {
+        if (auto transformed = verb_teTransformMap.find_replace_ending(verb)) {
             verb.replace(verb.length() - jp_const::CHAR_BYTE_SIZE, jp_const::CHAR_BYTE_SIZE, *transformed);
         }else goto error_handling;
         return verb;
@@ -78,7 +78,7 @@ std::string jpgrammar::format_verb(std::string& verb, const size_t& format, cons
 	//add polite form, based on positivity or negativity of verb
     //rely on fact that wrong difficutly cannot get thus far... if it did, then this entire program is wrong and this is least of issues
     if(formal){
-        switch (format) { //format is 0-5
+        switch (format) { //format is 0-4
         case 0:
             verb += "ます";
             break;
@@ -94,13 +94,12 @@ std::string jpgrammar::format_verb(std::string& verb, const size_t& format, cons
         case 4:
             verb += "ましょう";
             break;
-        case 5:
+        default:
             break;
         }
     }
     else {
-        switch (format) { //format is 0-5
-
+        switch (format) { //format is 0-4
         case 1:
             verb += "ない";
             break;
@@ -113,7 +112,7 @@ std::string jpgrammar::format_verb(std::string& verb, const size_t& format, cons
         case 4:
             verb += "よう";
             break;
-        case 5:
+        default:
             break;
         }
     }

@@ -47,16 +47,40 @@ namespace jpgrammar {
 	};	
 
 	// Te form of verb transformation map
-    constexpr TransformMap<std::string_view, std::string_view, 9> verb_teTransformMap = {
+    constexpr TransformMap<std::string_view, std::string_view, 33> verb_teTransformMap = {
+        {"いる", "いて"},
+        {"える", "えて"},
+        {"きる", "きて"},
+        {"ける", "けて"},
+        {"ぎる", "ぎて"},
+        {"げる", "げて"},
+        {"しる", "して"},
+        {"せる", "せて"},
+        {"じる", "じて"},
+        {"ぜる", "ぜて"},
+        {"にる", "にて"},
+        {"ねる", "ねて"},
+        {"ちる", "ちて"},
+        {"てる", "てて"},
+        {"ひる", "ひて"},
+        {"へる", "へて"},
+        {"びる", "びて"},
+        {"べる", "べて"},
+        {"ぴる", "ぴて"},
+        {"ぺて", "ぺて"},
+        {"みる", "みて"},
+        {"める", "めて"},
+        {"りる", "りて"},
+        {"れる", "れる"},
 		{"う", "って"},
+        {"つ", "って"},
+        {"る", "て"},
+        {"む", "んで"},
+        {"ぶ", "んで"},
+        {"ぬ", "んで"},
 		{"く", "いて"},
 		{"ぐ", "いで"},
 		{"す", "して"},
-		{"つ", "って"},
-		{"ぬ", "んで"},
-		{"む", "んで"},
-		{"ぶ", "んで"},
-        {"る", "て"}
 	};
 
     constexpr TransformMap<std::string_view, std::string_view, 9> informal_verb_taTransformMap = {
@@ -97,10 +121,9 @@ namespace jpgrammar {
 
 
     //irregular verbs map
-    constexpr TransformMap<std::string_view,std::string_view,6> irregular_verbsMap = {
+    constexpr TransformMap<std::string_view,std::string_view,2> irregular_verbsMap = {
         {"する", "しる"},
         {"くる", "きる"},
-        {"いく", "いる"},
     };
 
     //functions that format subject
