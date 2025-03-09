@@ -14,13 +14,13 @@ std::string engrammar::format_verb(std::string& verb, const size_t& format, cons
 				return s(verb); //format for third person
             } else return verb;
 		case 1:
-            verb = dot(subject, format) + verb; //do + verb
+            verb = dot(subject, format) + " " + verb; //do + verb
 			return verb;
 		case 2:
 			verb = v_past(verb, 1);
 			return verb;
 		case 3: 
-            verb = dot(subject, format) + verb; //do + verb
+            verb = dot(subject, format) + " " + verb; //do + verb
 			return verb;
 		case 4:
             verb = "should " + verb;
@@ -163,43 +163,43 @@ const std::string engrammar::be(const std::string& subject, const size_t& format
 	if (subject == "I") {
 		switch (format) {
 		case 0:
-            return "am ";
+            return "am";
 		case 1:
-            return "am not ";
+            return "am not";
 		case 2:
-            return "was ";
+            return "was";
 		case 3:
-            return "wasn't ";
+            return "wasn't";
 		case 4:
-            return "should be ";
+            return "should be";
 		}
 	}
 	else if(subject == "you" || subject == "we" || subject == "they") {
 		switch (format) {
 		case 0:
-            return " are ";
+            return "are";
 		case 1:
-            return " aren't ";
+            return "aren't";
 		case 2:
-            return " were ";
+            return "were";
 		case 3:
-            return " weren't ";
+            return "weren't";
 		case 4:
-            return "should be ";
+            return "should be";
 		}
 	}
 	else {
 		switch (format) {
 		case 0:
-            return "is ";
+            return "is";
 		case 1:
-            return "isn't ";
+            return "isn't";
 		case 2:
-            return "was ";
+            return "was";
 		case 3:
-            return "wasn't ";
+            return "wasn't";
 		case 4:
-            return "should be ";
+            return "should be";
 		}
 	}
 }
@@ -208,13 +208,13 @@ const std::string engrammar::be(const std::string& subject, const size_t& format
 const std::string engrammar::dot(const std::string& subject, const size_t& format) {
 	switch (format) {
 	case 0:
-        return (subject == "I" || subject == "you" || subject == "we" || subject == "they") ? "do " : "does ";
+        return (subject == "I" || subject == "you" || subject == "we" || subject == "they") ? "do " : "does";
 	case 1:
-        return (subject == "I" || subject == "you" || subject == "we" || subject == "they") ? "don't　 " : "　doesn't ";
+        return (subject == "I" || subject == "you" || subject == "we" || subject == "they") ? "don't　 " : "　doesn't";
 	case 2:
-        return "　did　 ";
+        return "　did　";
 	case 3:
-        return "didn't ";
+        return "didn't";
 	default:
 		std::cerr << "not supported format"<<std::endl;
         return " redundant "; // Added default case

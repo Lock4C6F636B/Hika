@@ -88,7 +88,7 @@
         <item>ocha</item>
         <item>ryouri</item>
         <item>resutoran</item>
-        <item>pan/item>
+        <item>pan</item>
     </lesson_5>
     <lesson_6>
         <item>san</item>
@@ -365,7 +365,7 @@
         <item>hachi</item>
         <item>kyuu</item>
         <item>juu</item>
-        <ítem>hyaku</ítem>
+        <item>hyaku</item>
         <item>sen</item>
         <item>man</item>
     </lesson_11>
@@ -414,7 +414,6 @@
         <item>yomu</item>
         <item>kaku</item>
         <item>benkyou suru</item>
-        <meaning>nihongo</meaning>
     </lesson_15>
     <lesson_16>
         <item>nugu</item>

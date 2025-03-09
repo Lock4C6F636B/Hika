@@ -90,7 +90,7 @@ class Sentencer: private Origin<SentencerData>,private ScriptureOfWest{
         inline void inscribe() const noexcept override; //make correct answer
 
 		//build_prompt japanese
-        std::string JPbuild_prompt_0() const;
+        std::string JPbuild_prompt_simple() const;
         //std::string JPbuild_prompt_1() const;
         //std::string JPbuild_prompt_2() const;
         //std::string JPbuild_prompt_3() const;
@@ -105,8 +105,8 @@ class Sentencer: private Origin<SentencerData>,private ScriptureOfWest{
         //std::string JPbuild_prompt_12() const;
         //std::string JPbuild_prompt_13() const;
 
-		//build comparassion sentences in japanese
-        int JPbuild_sentence_0() const;
+        //build comparassion sentences in japanese
+        int JPbuild_sentence_simple() const;
         //int JPbuild_sentence_1() const;
         //int JPbuild_sentence_2() const;
         //int JPbuild_sentence_3() const;
@@ -123,7 +123,7 @@ class Sentencer: private Origin<SentencerData>,private ScriptureOfWest{
 
 
 		//build_prompt in english
-        std::string ENbuild_prompt_0() const;
+        std::string ENbuild_prompt_simple() const;
         //std::string ENbuild_prompt_1() const;
         //std::string ENbuild_prompt_2() const;
         //std::string ENbuild_prompt_3() const;
@@ -139,7 +139,7 @@ class Sentencer: private Origin<SentencerData>,private ScriptureOfWest{
         //std::string ENbuild_prompt_13() const;
 	
 		//build comparassion sentences in english
-        int ENbuild_sentence_0() const;
+        int ENbuild_sentence_simple() const;
         //int ENbuild_sentence_1() const;
         //int ENbuild_sentence_2() const;
         //int ENbuild_sentence_3() const;
