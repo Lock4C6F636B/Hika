@@ -27,6 +27,7 @@
         <file>xml/grammar/jpgrammar/adjective_exceptions.xml</file>
         <file>resources/おねんね猫さん.png</file>
         <file>xml/vocabulary/jp_vocabulary.xml</file>
+        <file>xml/grammar/jpgrammar/te_verb_exceptions.xml</file>
     </qresource>
     <qresource prefix="/audio_vocabulary">
         <file>resources/audio_vocabulary/ゆれい/en/en_ありがとうございます.mp3</file>

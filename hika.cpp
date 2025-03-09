@@ -144,7 +144,7 @@ void HiKa::inflection_master(){
                 engrammar::initialize();
             }
             if(jpgrammar::exceptions_empty()){
-                jpgrammar::initialize();
+                jpgrammar::initialize(library->getDifficulty());
             }
         }
         else {
@@ -175,7 +175,7 @@ void HiKa::sentencer(){
                 engrammar::initialize();
             }
             if(jpgrammar::exceptions_empty()){
-                jpgrammar::initialize();
+                jpgrammar::initialize(library->getDifficulty());
             }
         }
         else {

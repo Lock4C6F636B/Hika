@@ -32,7 +32,8 @@ namespace jp_const {
 }
 
 namespace jpgrammar {
-    inline std::unique_ptr<Exceptions<1>> adj_except = std::make_unique<Exceptions<1>>();
+    inline std::unique_ptr<Exceptions<2>> te_verb_except = std::make_unique<Exceptions<2>>();
+    inline std::unique_ptr<Exceptions<2>> adj_except = std::make_unique<Exceptions<2>>();
 
 	// Maps for transformations of verbs
     constexpr TransformMap<std::string_view, std::string_view, 8> formal_verbTransformMap = {
@@ -47,7 +48,9 @@ namespace jpgrammar {
 	};	
 
 	// Te form of verb transformation map
-    constexpr TransformMap<std::string_view, std::string_view, 33> verb_teTransformMap = {
+    constexpr TransformMap<std::string_view, std::string_view, 35> verb_teTransformMap = {
+        {"する", "して"},
+        {"くる", "きて"},
         {"いる", "いて"},
         {"える", "えて"},
         {"きる", "きて"},
@@ -141,7 +144,7 @@ namespace jpgrammar {
 
     //for exceptions, currently for only for adj_except, which affects only hiragana difficulty
     //------------------------------------------------------------------------------------------------------------------
-    int initialize(); //will initialize and load all exception... larger
+    int initialize(const size_t &difficulty); //will initialize and load all exception... larger
 
     bool exceptions_empty() noexcept;
 }

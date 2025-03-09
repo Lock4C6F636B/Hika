@@ -39,11 +39,16 @@ std::string jpgrammar::format_verb(std::string& verb, const size_t& format, cons
 	
 
     if (format == 5){ //handle case of te form
+        if (!te_verb_except->empty() && te_verb_except->find(verb)) {
+            return std::string(*te_verb_except->find_and_replace(verb, 1));
+        }
+
         if (auto transformed = verb_teTransformMap.find_replace_ending(verb)) {
             verb.replace(verb.length() - jp_const::CHAR_BYTE_SIZE, jp_const::CHAR_BYTE_SIZE, *transformed);
         }else goto error_handling;
         return verb;
     }
+
     else if(!formal && format == 2){ //informal past positive
         if (auto transformed = informal_verb_taTransformMap.find_replace(lastChar)) {
             verb.replace(verb.length() - jp_const::CHAR_BYTE_SIZE, jp_const::CHAR_BYTE_SIZE, *transformed);
@@ -187,7 +192,12 @@ std::string jpgrammar::should_adj(std::string &adjective, const std::string &ver
 
 
 //initialize all the exceptions
-int jpgrammar::initialize() {
+int jpgrammar::initialize(const size_t &difficulty) {
+    if ((difficulty == 3 || difficulty == 6) && te_verb_except->load(":/xml/grammar/jpgrammar/te_verb_exceptions.xml") != 0) { //load irregular verbs for past tense
+        std::cerr << "Failed to load te verb exceptions" << std::endl;
+        return 1;
+    }
+
     if (adj_except->load(":/xml/grammar/jpgrammar/adjective_exceptions.xml") != 0) { //load irregular verbs for past tense
         std::cerr << "Failed to load adjective exceptions" << std::endl;
         return 1;

@@ -114,14 +114,14 @@ class Exceptions {
 	
         inline size_t size() const { return words.size(); }
 	
-        std::optional<std::string_view> find_and_replace(const std::string_view& word, const size_t& tense) const {
-			if (tense > N) {//handle reaching out of bounds
+        std::optional<std::string_view> find_and_replace(const std::string_view& word, const size_t& index) const {
+            if (index > N) {//handle reaching out of bounds
 				std::cerr << "subscript out of range"; return std::nullopt;
 			}
 
             for (const auto& word_forms : words) { //search through first tense
                 if (word_forms[0] == word) {
-                    return word_forms[tense]; //if found return desired tense of index
+                    return word_forms[index]; //if found return desired tense of index
 				}
 			}
 			return std::nullopt;

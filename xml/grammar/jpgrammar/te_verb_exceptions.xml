@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Exceptions>
+    <item>
+        <infinite>来る</infinite>
+        <te_form>来て</te_form>
+    </item>
+    <item>
+        <infinite>見る</infinite>
+        <te_form>見て</te_form>
+    </item>
+</Exceptions>
+
