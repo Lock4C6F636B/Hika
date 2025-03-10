@@ -6,7 +6,7 @@
         <item>ohayo</item>
         <item>konban wa</item>
         <item>hajimemashite</item>
-        <item>yoroshiku</item>
+        <item>yoroshiku onegai shimasu</item>
     </lesson_1>
     <lesson_2>
         <item>arigato gozaimasu</item>
@@ -25,9 +25,9 @@
     <lesson_5></lesson_5>
     <lesson_6>
         <item>hisashiburi</item>
-        <item>dozo</item>
+        <item>douzo</item>
         <item>itadakimasu</item>
-        <item>daijobu</item>
+        <item>daijoubu</item>
         <item>asoko</item>
         <item>etto</item>
         <item>uwa</item>
@@ -70,7 +70,7 @@
     </lesson_3>
     <lesson_4>
         <item>okyakusan</item>
-        <item>menyu</item>
+        <item>menyuu</item>
         <item>chuumon</item>
         <item>okaikei</item>
         <item>gurasu</item>
@@ -92,7 +92,10 @@
     </lesson_5>
     <lesson_6>
         <item>san</item>
-        <item>minasan</item>
+        <item>
+        <meaning>minasan</meaning>
+        <meaning>mina</meaning>
+        </item>
         <item>tomodachi</item>
         <item>kuruma</item>
         <item>ie</item>
@@ -101,7 +104,7 @@
     <lesson_7>
         <item>kazoku</item>
         <item>arubamu</item>
-        <item>imoto</item>
+        <item>imouto</item>
         <item>
             <meaning>otousan</meaning>
             <meaning>chichi</meaning>
@@ -113,7 +116,6 @@
             <meaning>mama</meaning>
         </item>
         <item>kodomo</item>
-        <item>ko</item>
     </lesson_7>
     <lesson_8>
         <item>toire</item>
@@ -159,7 +161,7 @@
         <item>kin-youbi</item>
         <item>do-youbi</item>
         <item>nichi-youbi</item>
-        <item>yugata</item>
+        <item>yuugata</item>
         <item>yoru</item>
         <item>getsu</item>
         <item>raigetsu</item>
@@ -205,7 +207,9 @@
         <item>tsukue</item>
         <item>isu</item>
     </lesson_18>
-    <lesson_19></lesson_19>
+    <lesson_19>
+    	<item>isha</item>
+    </lesson_19>
     <lesson_20>
         <item>tesuto</item>
         <item>mondai</item>

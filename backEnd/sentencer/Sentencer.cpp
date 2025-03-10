@@ -135,82 +135,21 @@ bool Sentencer::compare(const std::string answer)  {
 
 void Sentencer::inscribe() const noexcept {
     //build sentences
-    switch(data.template_type){ //add more templates when their functions will be implemented
-    case 0:
-        if(library->getDifficulty() < 4){
+    if(library->getDifficulty() < 4){
+        if(data.template_type < 2){
             JPbuild_sentence_simple();
-        } else ENbuild_sentence_simple();
-        return;
-    case 1:
-        if(library->getDifficulty() < 4){
-            JPbuild_sentence_simple();
-        } else ENbuild_sentence_simple();
-        return;
-    //case 1:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_1();
-    //    } else ENbuild_sentence_1();
-    //    return;
-    //case 2:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_2();
-    //    } else ENbuild_sentence_2();
-    //    return;
-    //case 3:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_3();
-    //    } else ENbuild_sentence_3();
-    //    return;
-    //case 4:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_4();
-    //    } else ENbuild_sentence_4();
-    //    return;
-    //case 5:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_5();
-    //    } else ENbuild_sentence_5();
-    //    return;
-    //case 6:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_6();
-    //    } else ENbuild_sentence_6();
-    //    return;
-    //case 7:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_7();
-    //    } else ENbuild_sentence_7();
-    //    return;
-    //case 8:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_8();
-    //    } else ENbuild_sentence_8();
-    //    return;
-    //case 9:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_9();
-    //    } else ENbuild_sentence_9();
-    //    return;
-    //case 10:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_10();
-    //    } else ENbuild_sentence_10();
-    //    return;
-    //case 11:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_11();
-    //    } else ENbuild_sentence_11();
-    //    return;
-    //case 12:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_12();
-    //    } else ENbuild_sentence_12();
-    //    return;
-    //case 13:
-    //    if(library->getDifficulty() < 4){
-    //        JPbuild_sentence_13();
-    //    } else ENbuild_sentence_13();
-    //    return;
+        }
+        else if(data.template_type < 4){
+            JPbuild_sentence_te_form();
+        }
+    }
+    else {
+        if(data.template_type < 2){
+            ENbuild_sentence_simple();
+        }
+        else if(data.template_type < 4){
+            ENbuild_sentence_te_form();
+        }
     }
 }
 
@@ -218,82 +157,21 @@ std::string Sentencer::harbinger() const noexcept{
     std::string prompt; //store prompt
 
     //build appropriate prompt
-    switch(data.template_type){
-    case 0:
-        if(library->getDifficulty() < 4){
+    if(library->getDifficulty() < 4){
+        if(data.template_type < 2){
             prompt = ENbuild_prompt_simple();
-        } else prompt = JPbuild_prompt_simple();
-        break;
-    case 1:
-        if(library->getDifficulty() < 4){
-            prompt = ENbuild_prompt_simple();
-        } else prompt = JPbuild_prompt_simple();
-        break;
-    //case 1:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_1();
-    //    } else prompt = JPbuild_prompt_1();
-    //    break;
-    //case 2:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_2();
-    //    } else prompt = JPbuild_prompt_2();
-    //    break;
-    //case 3:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_3();
-    //    } else prompt = JPbuild_prompt_3();
-    //    break;
-    //case 4:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_4();
-    //    } else prompt = JPbuild_prompt_4();
-    //    break;
-    //case 5:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_5();
-    //    } else prompt = JPbuild_prompt_5();
-    //    break;
-    //case 6:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_6();
-    //    } else prompt = JPbuild_prompt_6();
-    //    break;
-    //case 7:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_7();
-    //    } else prompt = JPbuild_prompt_7();
-    //    break;
-    //case 8:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_8();
-    //    } else prompt = JPbuild_prompt_8();
-    //    break;
-    //case 9:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_9();
-    //    } else prompt = JPbuild_prompt_9();
-    //    break;
-    //case 10:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_10();
-    //    } else prompt = JPbuild_prompt_10();
-    //    break;
-    //case 11:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_11();
-    //    } else prompt = JPbuild_prompt_11();
-    //    break;
-    //case 12:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_12();
-    //    } else prompt = JPbuild_prompt_12();
-    //    break;
-    //case 13:
-    //    if(library->getDifficulty() < 4){
-    //        prompt = ENbuild_prompt_13();
-    //    } else prompt = JPbuild_prompt_13();
-    //    break;
+        }
+        else if(data.template_type < 4){
+            prompt = ENbuild_prompt_te_form();
+        }
+    }
+    else {
+        if(data.template_type < 2){
+            prompt = JPbuild_prompt_simple();
+        }
+        else if(data.template_type < 4){
+            prompt = JPbuild_prompt_te_form();
+        }
     }
 
     return prompt;

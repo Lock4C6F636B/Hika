@@ -27,7 +27,10 @@
         <item>久しぶり</item>
         <item>どうぞ</item>
         <item>いただきます</item>
-        <item>大丈夫</item>
+        <item>
+        <meaning>大丈夫</meaning>
+        <meaning>だいじょうぶ</meaning>
+        </item>
         <item>あそこ</item>
         <item>えっと</item>
         <item>ウワ</item>
@@ -118,8 +121,7 @@
             <meaning>母</meaning>
             <meaning>ママ</meaning>
         </item>
-        <item>子ども</item>
-        <item>子</item>
+        <item>子供</item>
     </lesson_7>
     <lesson_8>
             <item>トイレ</item>
@@ -214,7 +216,9 @@
         <item>机</item>
         <item>椅子</item>
     </lesson_18>
-    <lesson_19></lesson_19>
+    <lesson_19>
+    	<item>医者<item>
+    </lesson_19>
     <lesson_20>
         <item>テスト</item>
         <item>問題</item>

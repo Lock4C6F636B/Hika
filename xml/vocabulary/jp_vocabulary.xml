@@ -70,10 +70,16 @@
     </lesson_3>
     <lesson_4>
         <item>おきゃくさん</item>
-        <item>めにゆう</item>
+        <item>
+        <meaning>めにゅう</meaning>
+        <meaning>メニュー<meaning>
+        </item>
         <item>ちゅうもん</item>
         <item>おかいけ</item>
-        <item>ぐらす</item>
+        <item>
+        <meaning>ぐらす</meaning>
+        <meaning>グラス</meaning>
+        </item>
     </lesson_4>
     <lesson_5>
         <item>たべもの</item>
@@ -93,8 +99,8 @@
     <lesson_6>
         <item>さん</item>
         <item>
-        <meaning>みな</meaning>	
-        <meaning>みなさん</meaning>
+        <meaning>みなさん</meaning>	
+        <meaning>みな</meaning>
         </item>
         <item>ともだち</item>
         <item>くるま</item>
@@ -116,12 +122,17 @@
             <meaning>まま</meaning>
         </item>
         <item>こども</item>
-        <item>こ</item>
     </lesson_7>
     <lesson_8>
-        <item>といれ</item>
+        <item>
+        <meaning>といれ</meaning>
+        <meaning>トイレ</meaning>
+        </item>
         <item>ごみばこ</item>
-        <item>ばす</item>
+        <item>
+        <meaning>ばす</meaning>
+        <meaning>バス</meaning>
+        </item>
         <item>ぎんこう</item>
         <item>ここ</item>
         <item>みせ</item>
@@ -182,8 +193,14 @@
     </lesson_14>
     <lesson_15>
         <item>えいがかん</item>
-        <item>ぷうる</item>
-        <item>ぴくにっく</item>
+        <item>
+        <meaning>ぷうる</meaning>
+        <meaning>プール</meaning>
+        </item>
+        <item>
+        <meaning>ぴくにっく</meaning>
+        <meaning>ピクニク</meaning>
+        </item>
         <item>べんきょう</item>
         <item>
             <meaning>にほんご</meaning>
@@ -193,7 +210,10 @@
     <lesson_16>
         <item>めがね</item>
         <item>ぼうし</item>
-        <item>ぽけっと</item>
+        <item>
+        <meaning>ぽけっと</meaning>
+        <meaning>ポケット</meaning>
+        </item>
     </lesson_16>
     <lesson_17>
         <item>けっこん</item>
@@ -201,9 +221,15 @@
         <item>せいかつ</item>
     </lesson_17>
     <lesson_18>
-        <item>ないふ</item>
+        <item>
+        <meaning>ないふ</meaning>
+        <meaning>ナイフ</meaning>
+        </item>
         <item>おふろ</item>
-        <item>てーぶる</item>
+        <item>
+        <meaning>てーぶる</meaning>
+        <meaning>テーブル</meaning>
+        </item>
         <item>まど</item>
         <item>つくえ</item>
         <item>いす</item>

@@ -149,7 +149,6 @@
             <meaning>mami</meaning>
         </item>
         <item>children</item>
-        <item>child</item>
     </lesson_7>
     <lesson_8>
         <item>toilet</item>
@@ -205,7 +204,6 @@
         <item>friday</item>
         <item>saturday</item>
         <item>sunday</item>
-        <item>evening</item>
         <item>dusk</item>
         <item>night</item>
         <item>month</item>
@@ -222,10 +220,12 @@
         <item>
             <meaning>male</meaning>
             <meaning>man</meaning>
+            <meaning>boy<meaning>
         </item>
         <item>
             <meaning>female</meaning>
             <meaning>woman</meaning>
+            <meaning>girl</meaning>
         </item>
         <item>japanese</item>
         <item>
