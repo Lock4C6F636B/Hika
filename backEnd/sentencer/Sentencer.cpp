@@ -224,7 +224,6 @@ std::string Sentencer::JPbuild_prompt_simple() const {
     return prompt;
 };
 
-
 //build japanese sentence answers
 int Sentencer::JPbuild_sentence_simple() const {
     buddha_sutras.push_back(std::vector<std::string>()); //important to do
@@ -309,6 +308,9 @@ int Sentencer::JPbuild_sentence_simple() const {
 }
 
 
+std::string Sentencer::JPbuild_prompt_te_form() const{ return "string";}
+
+int Sentencer::JPbuild_sentence_te_form() const { return 0;}
 
 //ENGLISH--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //build english prompt sentence
@@ -366,9 +368,8 @@ std::string Sentencer::ENbuild_prompt_simple() const {
 	return prompt;
 };
 
-
 //build english sentence answers
-int Sentencer::ENbuild_sentence_simple() const{
+int Sentencer::ENbuild_sentence_simple() const {
     buddha_sutras.push_back(std::vector<std::string>()); //important to do
 
     //lambda to add each meaning of word to each comparasion sentences
@@ -435,5 +436,7 @@ int Sentencer::ENbuild_sentence_simple() const{
 }
 
 
+std::string Sentencer::ENbuild_prompt_te_form() const { return "string";}
 
+int Sentencer::ENbuild_sentence_te_form() const{ return 0;}
 
