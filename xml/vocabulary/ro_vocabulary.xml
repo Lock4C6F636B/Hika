@@ -213,7 +213,10 @@
     <lesson_20>
         <item>tesuto</item>
         <item>mondai</item>
-        <item>nihongo</item>
+        <item>
+        <meaning>nihongo</meaning>
+        <meaning>nihonjin</meaning>
+        </item>
         <item>sensei</item>
     </lesson_20>
     <lesson_21></lesson_21>
@@ -295,7 +298,9 @@
     <lesson_17></lesson_17>
     <lesson_18></lesson_18>
     <lesson_19></lesson_19>
-    <lesson_20></lesson_20>
+    <lesson_20>
+    	<item>muzukashii</item>
+    </lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
@@ -437,6 +442,7 @@
     </lesson_19>
     <lesson_20>
         <item>tatsu</item>
+        <item>benkyou suru</item>
     </lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
@@ -460,7 +466,6 @@
         <item>nanji</item>
         <item>do</item>
         <item>dare</item>
-        <item>tooi</item>
     </lesson_8>
     <lesson_9></lesson_9>
     <lesson_10></lesson_10>

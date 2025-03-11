@@ -316,7 +316,7 @@
         <item>賢い</item>
         <item>親しい</item>
         <item>カラフル</item>
-        <item>落ち着いた</item>
+        <item>落ち着たい</item>
         <item>元気</item>
         <item>いけてる</item>
         <item>強い</item>
@@ -330,7 +330,9 @@
     <lesson_17></lesson_17>
     <lesson_18></lesson_18>
     <lesson_19></lesson_19>
-    <lesson_20></lesson_20>
+    <lesson_20>
+    	<item>難しい</item>
+    </lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
@@ -456,7 +458,6 @@
         <item>読む</item>
         <item>書く</item>
         <item>勉強する</item>
-        <item>脱ぐ</item>
     </lesson_15>
     <lesson_16>
         <item>脱ぐ</item>
@@ -476,6 +477,7 @@
     </lesson_19>
     <lesson_20>
         <item>立つ</item>
+        <item>勉強する</item>
     </lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
@@ -499,7 +501,6 @@
         <item>なんじ</item>
         <item>どう</item>
         <item>だれ</item>
-        <item>遠い</item>
     </lesson_8>
     <lesson_9></lesson_9>
     <lesson_10></lesson_10>
