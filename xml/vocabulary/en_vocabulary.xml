@@ -270,9 +270,13 @@
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
     <lesson_23>
+        <item>animal</item>
         <item>cat</item>
         <item>dog</item>
         <item>elephant</item>
+        <item>gorilla</item>
+        <item>lion</item>
+        <item>cow</item>
     </lesson_23>
     <lesson_24>
         <item>sun</item>

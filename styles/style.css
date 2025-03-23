@@ -4,12 +4,25 @@ HiKa {
 
 /* Make WBWindow style more specific and force it */
 QWidget#WBWindow {
+    image: url(:/resources/haku1.png);
+    /*
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.866, y2:0.728366, stop:0.00811359 rgba(201, 94, 17, 255), stop:0.0516055 rgba(169, 52, 13, 255), stop:0.148467 rgba(173, 20, 9, 255), stop:0.225291 rgba(126, 18, 4, 255), stop:0.350291 rgba(71, 14, 0, 255), stop:0.456897 rgba(35, 9, 13, 255), stop:0.572319 rgba(3, 4, 17, 255)) !important;
+    */
 }
 
 /* Make InflectWindow style more specific and force it */
 QWidget#InflectWindow {
+    image: url(:/resources/haku1.png);
+    /*
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.0893855 rgba(0, 255, 207, 125), stop:0.374302 rgba(0, 0, 0, 255)) !important;
+    */
+}
+
+QWidget#SentencerWindow {
+    image: url(:/resources/vengeance2.png);
+    /*
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.0893855 rgba(0, 255, 207, 125), stop:0.374302 rgba(0, 0, 0, 255)) !important;
+    */
 }
 
 
@@ -66,32 +79,32 @@ QLabel#imageLabel[state="1"] {
 }
 
 QLabel#imageLabel[state="2"] {
-    image: url(:/resources/success_1.png);
+    image: url(:/resources/succes_2.png);
     background-color: transparent;
 }
 
 QLabel#imageLabel[state="3"] {
-    image: url(:/:/resources/succes_2.png);
+    image: url(:/resources/onni1.png);
     background-color: transparent;
 }
 
 QLabel#imageLabel[state="4"] {
-    image: url(:/resources/00041-3853208862-swapped.png);
+    image: url(:/resources/flare.png);
     background-color: transparent;
 }
 
 QLabel#imageLabel[state="5"] {
-    image: url(:/resources/success1.png);
+    image: url(:/resources/fireone.png);
     background-color: transparent;
 }
 
 QLabel#imageLabel[state="6"] {
-    image: url(:/resources/success1.png);
+    image: url(:/resources/phoenix_img.png);
     background-color: transparent;
 }
 
 QLabel#imageLabel[state="-1"] {
-    image: url(:/resources/success_1.png);
+    image: url(:/resources/dk4.png);
     background-color: transparent;
 }
 

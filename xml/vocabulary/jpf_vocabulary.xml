@@ -231,6 +231,7 @@
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
     <lesson_23>
+        <item>動物</item>
         <item>
             <meaning>猫</meaning>
             <meaning>ネコ</meaning>
@@ -245,6 +246,9 @@
             <meaning>象</meaning>
             <meaning>ゾウ</meaning>
         </item>
+        <item>ゴリラ</item>
+        <item>ライオン</item>
+        <item>牛</item>
     </lesson_23>
     <lesson_24>
         <item>日</item>

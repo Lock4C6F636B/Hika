@@ -43,7 +43,7 @@
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true">image: url(:/resources/yatsu_close_3.png);
+           <string notr="true">image: url(:/resources/dk4.png);
 </string>
           </property>
           <property name="text">

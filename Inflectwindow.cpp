@@ -100,7 +100,7 @@ void InflectWindow::success(const int success_count) noexcept {//print out succe
         ui->imageLabel->setProperty("state", state);
         ui->imageLabel->style()->polish(ui->imageLabel);  // Force style update
 
-        QTimer::singleShot(4000, [this]() {
+        QTimer::singleShot(15000, [this]() {
             ui->imageLabel->setProperty("state", 0);
             ui->imageLabel->style()->polish(ui->imageLabel);
         });

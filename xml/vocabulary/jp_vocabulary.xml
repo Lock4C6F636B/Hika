@@ -252,9 +252,31 @@
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
     <lesson_23>
-        <item>ねこ</item>
-        <item>いぬ</item>
-        <item>ぞう</item>
+        <item>どうぶつ</item>
+        <item>
+            <meaning>ねこ</meaning>
+            <meaning>ネコ</meaning>
+        </item>
+        <item>
+            <meaning>いぬ</meaning>
+            <meaning>イヌ</meaning>
+        </item>
+        <item>
+            <meaning>ぞう</meaning>
+            <meaning>ゾウ</meaning>
+        </item>
+        <item>
+            <meaning>ごりら</meaning>
+            <meaning>ゴリラ</meaning>
+        </item>
+        <item>
+            <meaning>らいおん</meaning>
+            <meaning>ライオン</meaning>
+        </item>
+        <item>
+            <meaning>うし</meaning>
+            <meaning>ウシ</meaning>
+        </item>
     </lesson_23>
     <lesson_24>
         <item>にち</item>

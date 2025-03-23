@@ -28,6 +28,13 @@
         <file>resources/おねんね猫さん.png</file>
         <file>xml/vocabulary/jp_vocabulary.xml</file>
         <file>xml/grammar/jpgrammar/te_verb_exceptions.xml</file>
+        <file>resources/phoenix_img.png</file>
+        <file>resources/haku1.png</file>
+        <file>resources/flare.png</file>
+        <file>resources/fireone.png</file>
+        <file>resources/dk4.png</file>
+        <file>resources/vengeance2.png</file>
+        <file>resources/onni1.png</file>
     </qresource>
     <qresource prefix="/audio_vocabulary">
         <file>resources/audio_vocabulary/ゆれい/en/en_ありがとうございます.mp3</file>
