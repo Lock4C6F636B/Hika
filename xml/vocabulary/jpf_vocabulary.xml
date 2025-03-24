@@ -15,7 +15,11 @@
         <item>お願いします</item>
     </lesson_2>
     <lesson_3>
-        <item>すみません</item>
+        <item>
+            <meaning>すみません</meaning>
+            <meaning>米</meaning>
+            <meaning>米なさい</meaning>
+        </item>
         <item>はい</item>
         <item>いいえ</item>
         <item>あの</item>
@@ -60,6 +64,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Mixed>
 
 
@@ -95,6 +100,8 @@
         <item>料理</item>
         <item>レストラン</item>
         <item>パン</item>
+        <item>チキン</item>
+        <item>フライドチキン</item>
     </lesson_5>
     <lesson_6>
         <item>さん</item>
@@ -230,7 +237,8 @@
     </lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23>
+    <lesson_23></lesson_23>
+    <lesson_24>
         <item>動物</item>
         <item>
             <meaning>猫</meaning>
@@ -249,19 +257,19 @@
         <item>ゴリラ</item>
         <item>ライオン</item>
         <item>牛</item>
-    </lesson_23>
-    <lesson_24>
+    </lesson_24>
+    <lesson_25>
         <item>日</item>
         <item>火</item>
         <item>水</item>
         <item>月</item>
         <item>気</item>
         <item>日本</item>
-    </lesson_24>
-    <lesson_25>
+    </lesson_25>
+    <lesson_26>
         <item>爪</item>
         <item>絡新婦</item>
-    </lesson_25>
+    </lesson_26>
 </Noun>
 
 
@@ -324,6 +332,7 @@
         <item>元気</item>
         <item>いけてる</item>
         <item>強い</item>
+        <item>煩い</item>
     </lesson_14>
     <lesson_15>
         <item>難しい</item>
@@ -342,6 +351,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Adjective>
 
 
@@ -367,7 +377,13 @@
     </lesson_6>
     <lesson_7></lesson_7>
     <lesson_8></lesson_8>
-    <lesson_9></lesson_9>
+    <lesson_9>
+        <item>kocchi</item>
+        <item>
+            <meaning>socchi</meaning>
+            <meaning>acchi</meaning>
+        </item>
+    </lesson_9>
     <lesson_10></lesson_10>
     <lesson_11></lesson_11>
     <lesson_12></lesson_12>
@@ -384,6 +400,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Pronoun>
 
 
@@ -425,9 +442,16 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23></lesson_23>
+    <lesson_23>
+        <item>才</item>
+        <item>一切</item>
+        <item>八才</item>
+        <item>十才</item>
+        <item>二十歳</item>
+    </lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Number>
 
 
@@ -488,6 +512,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Verb>
 
 
@@ -520,9 +545,12 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23></lesson_23>
+    <lesson_23>
+        <item>何才</item>
+    </lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Adverb>
 
 <Preposition>
@@ -551,6 +579,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Preposition>
 
 <Conjunction>
@@ -581,5 +610,6 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Conjunction>
 </Vocab>

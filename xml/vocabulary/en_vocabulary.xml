@@ -79,6 +79,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_25></lesson_25>
 </Mixed>
 
 
@@ -123,6 +124,8 @@
         </item>
         <item>restaurant</item>
         <item>bread</item>
+        <item>chicken</item>
+        <item>fried chicken</item>
     </lesson_5>
     <lesson_6>
         <item>mister</item>
@@ -269,7 +272,8 @@
     </lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23>
+    <lesson_23></lesson_23>
+    <lesson_24>
         <item>animal</item>
         <item>cat</item>
         <item>dog</item>
@@ -277,8 +281,8 @@
         <item>gorilla</item>
         <item>lion</item>
         <item>cow</item>
-    </lesson_23>
-    <lesson_24>
+    </lesson_24>
+    <lesson_25>
         <item>sun</item>
         <item>fire</item>
         <item>water</item>
@@ -288,14 +292,14 @@
             <meaning>mind</meaning>
         </item>
         <item>japan</item>
-    </lesson_24>
-    <lesson_25>
+    </lesson_25>
+    <lesson_26>
         <item>
             <meaning>nail</meaning>
             <meaning>talon</meaning>
         </item>
         <item>jorogumo</item>
-    </lesson_25>
+    </lesson_26>
 </Noun>
 
 
@@ -375,6 +379,11 @@
         <item>lively</item>
         <item>cool</item>
         <item>strong</item>
+        <item>
+            <meaning>loud</meaning>
+            <meaning>noisy</meaning>
+            <meaning>annoying</meaning>
+        </item>
     </lesson_14>
     <lesson_15>
         <item>difficult</item>
@@ -390,6 +399,7 @@
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
+    <lesson_25></lesson_25>
     <lesson_25></lesson_25>
 </Adjective>
 
@@ -410,7 +420,10 @@
     </lesson_6>
     <lesson_7></lesson_7>
     <lesson_8></lesson_8>
-    <lesson_9></lesson_9>
+    <lesson_9>
+        <item>over here</item>
+        <item>over there</item>
+    </lesson_9>
     <lesson_10></lesson_10>
     <lesson_11></lesson_11>
     <lesson_12></lesson_12>
@@ -427,6 +440,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Pronoun>
 
 <Number>
@@ -467,9 +481,19 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23></lesson_23>
+    <lesson_23>
+        <item>
+            <meaning>age</meaning>
+            <meaning>old</meaning>
+        </item>
+        <item>one year old</item>
+        <item>eight years old</item>
+        <item>ten years old</item>
+        <item>twenty years old</item>
+    </lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Number>
 
 
@@ -528,6 +552,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Verb>
 
 
@@ -560,9 +585,12 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23></lesson_23>
+    <lesson_23>
+        <item>how old</item>
+    </lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Adverb>
 
 <Preposition>
@@ -591,6 +619,7 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Preposition>
 
 <Conjunction>
@@ -621,5 +650,6 @@
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
 </Conjunction>
 </Vocab>

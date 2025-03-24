@@ -2,7 +2,6 @@
     <qresource prefix="/">
         <file>resources/cursor.png</file>
         <file>styles/style.css</file>
-        <file>resources/yatsu_close_3.png</file>
         <file>resources/120410702_p0_master1200.png</file>
         <file>xml/alphabet/en_alphabet.xml</file>
         <file>xml/alphabet/hi_alphabet.xml</file>

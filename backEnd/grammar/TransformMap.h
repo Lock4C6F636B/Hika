@@ -48,4 +48,13 @@ public:
 		return std::nullopt;
 	}
 
+
+    std::optional<std::string> find_replace_ending_with_size(const std::string& word) const {
+        for (const auto& [ending, replacement] : *this) {
+            if (word.length() >= ending.length() && word.compare(word.length() - ending.length(), std::string::npos, ending) == 0) {
+                return std::string(replacement);
+            }
+        }
+        return std::nullopt;
+    }
 };

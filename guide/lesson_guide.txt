@@ -20,9 +20,10 @@
 20 	- school
 21 	- work
 22	- future
-23 	- animals
-24 	- elements and spirits
-25 	- jorogumo
+23	- age
+24 	- animals
+25 	- elements and spirits
+26 	- jorogumo
 
 1-7 remains same, 
 9->8 done

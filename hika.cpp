@@ -278,7 +278,7 @@ void HiKa::handleDifficultySelection(int Difficulty) {
 
 void HiKa::handleSectionSelection() {
     //pivotals to fill the vector first, whole thing relies on overriding to true
-    sections.resize(20, false); //no need to clear... settings everything to false already does the work
+    sections.resize(MAX_LESSON_COUNT, false); //no need to clear... settings everything to false already does the work
 
     //set to selection page
     ui->windowPages->setCurrentIndex(3);

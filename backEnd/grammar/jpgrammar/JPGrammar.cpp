@@ -44,9 +44,9 @@ std::string jpgrammar::format_verb(std::string& verb, const size_t& format, cons
         }
 
         if (auto transformed = verb_teTransformMap.find_replace_ending(verb)) {
-            //DO NOT KEEP THIS COMMENTED
-            //verb.replace(verb.length() - verb_teTransformMap.first_size(), jp_const::CHAR_BYTE_SIZE, *transformed);
+            verb = *transformed;
         }else goto error_handling;
+
         return verb;
     }
 

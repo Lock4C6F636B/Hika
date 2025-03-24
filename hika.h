@@ -35,6 +35,8 @@ private:
     activeFocus active_focus;
     std::string input; //user input
     libraryInitialized libInitialize; //to determine who is initializing library
+
+    static constexpr size_t MAX_LESSON_COUNT = 30; //magic const for reszing sections vector
     std::vector<bool> sections; //controls which sections should load
 
     //backend
