@@ -58,12 +58,19 @@
         <item>am</item>
         <item>pm</item>
     </lesson_12>
-    <lesson_13></lesson_13>
+    <lesson_13>
+        <item>do you know</item>
+    </lesson_13>
     <lesson_14></lesson_14>
     <lesson_15></lesson_15>
     <lesson_16></lesson_16>
     <lesson_17></lesson_17>
-    <lesson_18></lesson_18>
+    <lesson_18>
+        <item>
+            <meaning>well then</meaning>
+            <meaning>so</meaning>
+        </item>
+    </lesson_18>
     <lesson_19>
     	<item>
             <meaning>I'm going out</meaning>
@@ -85,6 +92,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Mixed>
 
 
@@ -166,7 +174,7 @@
             <meaning>mami</meaning>
         </item>
         <item>children</item>
-        </item>baby</item>
+        <item>baby</item>
     </lesson_7>
     <lesson_8>
         <item>toilet</item>
@@ -258,6 +266,10 @@
         <item>picnic</item>
         <item>study</item>
         <item>japanese</item>
+        <item>
+            <meaning>personal computer</meaning>
+            <meaning>computer</meaning>
+        </item>
     </lesson_15>
     <lesson_16></lesson_16>
     <lesson_17>
@@ -277,6 +289,7 @@
         <item>window</item>
         <item>desk</item>
         <item>chair</item>
+        <item>tv</item>
     </lesson_19>
     <lesson_20>
         <item>doctor</item>
@@ -285,6 +298,7 @@
         <item>test</item>
         <item>question</item>
         <item>japanese</item>
+        <item>english</item>
         <item>teacher</item>
     </lesson_21>
     <lesson_22></lesson_22>
@@ -313,7 +327,13 @@
             <meaning>stomach</meaning>
         </item>
     </lesson_26>
-    <lesson_27></lesson_27>
+    <lesson_27>
+        <item>
+            <meaning>personal computer</meaning>
+            <meaning>computer</meaning>
+        </item>
+        <item>magic</item>
+    </lesson_27>
     <lesson_28>
         <item>sun</item>
         <item>fire</item>
@@ -322,16 +342,23 @@
         <item>
             <meaning>spirit</meaning>
             <meaning>mind</meaning>
+            <meaning>soul</meaning>
         </item>
         <item>japan</item>
     </lesson_28>
     <lesson_29>
+        <item>fear</item>
+        <item>vengeance</item>
+        <item>honor</item>
+        <item>dishonor</item>
+    </lesson_29>
+    <lesson_30>
         <item>
             <meaning>nail</meaning>
             <meaning>talon</meaning>
         </item>
         <item>jorogumo</item>
-    </lesson_29>
+    </lesson_30>
 </Noun>
 
 
@@ -351,6 +378,7 @@
             <meaning>not tasty</meaning>
             <meaning>unappetizing</meaning>
         </item>
+        <item>spicy</item>
     </lesson_5>
     <lesson_6>
         <item>
@@ -436,6 +464,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Adjective>
 
 
@@ -476,9 +505,10 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
-    <lesson_17></lesson_27>
+    <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Pronoun>
 
 <Number>
@@ -531,6 +561,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Number>
 
 
@@ -538,7 +569,9 @@
     <lesson_1></lesson_1>
     <lesson_2></lesson_2>
     <lesson_3></lesson_3>
-    <lesson_4></lesson_4>
+    <lesson_4>
+        <item>buy</item>
+    </lesson_4>
     <lesson_5>
         <item>eat</item>
     </lesson_5>
@@ -555,7 +588,9 @@
     <lesson_10></lesson_10>
     <lesson_11></lesson_11>
     <lesson_12></lesson_12>
-    <lesson_13></lesson_13>
+    <lesson_13>
+        <item>know</item>
+    </lesson_13>
     <lesson_14></lesson_14>
     <lesson_15>
         <item>
@@ -566,7 +601,7 @@
         <item>write</item>
         <item>study</item>
     </lesson_15>
-    <lesson_26></lesson_16>
+    <lesson_16></lesson_16>
     <lesson_17>
         <item>undress</item>
     </lesson_17>
@@ -592,7 +627,10 @@
     <lesson_26></lesson_26>
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
-    <lesson_29></lesson_29>
+    <lesson_29>
+        <item>kill</item>
+    </lesson_29>
+    <lesson_30></lesson_30>
 </Verb>
 
 
@@ -634,6 +672,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Adverb>
 
 <Preposition>
@@ -666,6 +705,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Preposition>
 
 <Conjunction>
@@ -700,5 +740,6 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Conjunction>
 </Vocab>

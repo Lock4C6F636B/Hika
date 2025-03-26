@@ -50,12 +50,19 @@
         <item>午前</item>
         <item>午後</item>
     </lesson_12>
-    <lesson_13></lesson_13>
+    <lesson_13>
+        <item>知っていますか</item>
+    </lesson_13>
     <lesson_14></lesson_14>
     <lesson_15></lesson_15>
     <lesson_16></lesson_16>
     <lesson_17></lesson_17>
-    <lesson_18></lesson_18>
+    <lesson_18>
+        <item>
+            <meaning>じゃ</meaning>
+            <meaning>でわ</meaning>
+        </item>
+    </lesson_18>
     <lesson_19>
     	<item>行ってきます</item>
     	<item>行ってらっしゃい</item>
@@ -70,6 +77,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Mixed>
 
 
@@ -223,6 +231,11 @@
             <meaning>日本語</meaning>
             <meaning>日本人</meaning>
         </item>
+        <item>
+            <meaning>パソコン</meaning>
+            <meaning>コンピュウタ</meaning>
+            <meaning>コンピュウター</meaning>
+        </item>
     </lesson_15>
     <lesson_16></lesson_16>
     <lesson_17>
@@ -242,6 +255,7 @@
         <item>窓</item>
         <item>机</item>
         <item>椅子</item>
+        <item>テレビ</item>
     </lesson_19>
     <lesson_20>
         <item>医者</item>
@@ -253,6 +267,7 @@
             <meaning>日本語</meaning>
             <meaning>日本人</meaning>
         </item>
+        <item>英語</item>
         <item>先生</item>
     </lesson_21>
     <lesson_22></lesson_22>
@@ -286,19 +301,35 @@
     <lesson_26>
         <item>お腹</item>
     </lesson_26>
-    <lesson_27></lesson_27>
+    <lesson_27>
+        <item>
+            <meaning>パソコン</meaning>
+            <meaning>コンピュウタ</meaning>
+            <meaning>コンピュウター</meaning>
+        </item>
+        <item>魔法</item>
+    </lesson_27>
     <lesson_28>
         <item>日</item>
         <item>火</item>
         <item>水</item>
         <item>月</item>
-        <item>気</item>
+        <item>
+            <meaning>気</meaning>
+            <meaning>魂</meaning>
+        </item>
         <item>日本</item>
     </lesson_28>
     <lesson_29>
+        <item>恐怖</item>
+        <item>復習</item>
+        <item>名誉</item>
+        <item>不名誉</item>
+    </lesson_29>
+    <lesson_30>
         <item>爪</item>
         <item>絡新婦</item>
-    </lesson_29>
+    </lesson_30>
 </Noun>
 
 
@@ -313,6 +344,7 @@
             <meaning>美味しい</meaning>
         </item>
         <item>不味い</item>
+        <item>辛い</item>
     </lesson_5>
     <lesson_6>
         <item>
@@ -384,6 +416,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Adjective>
 
 
@@ -436,6 +469,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Pronoun>
 
 
@@ -477,7 +511,7 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lessonm_23></lesson_23>
+    <lesson_23></lesson_23>
     <lesson_24>
         <item>一切</item>
         <item>八才</item>
@@ -489,6 +523,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Number>
 
 
@@ -496,7 +531,9 @@
     <lesson_1></lesson_1>
     <lesson_2></lesson_2>
     <lesson_3></lesson_3>
-    <lesson_4></lesson_4>
+    <lesson_4>
+        <item>買う</item>
+    </lesson_4>
     <lesson_5>
         <item>食べる</item>
     </lesson_5>
@@ -516,7 +553,9 @@
     <lesson_10></lesson_10>
     <lesson_11></lesson_11>
     <lesson_12></lesson_12>
-    <lesson_13></lesson_13>
+    <lesson_13>
+        <item>知る</item>
+    </lesson_13>
     <lesson_14></lesson_14>
     <lesson_15>
         <item>出かける</item>
@@ -552,7 +591,10 @@
     <lesson_26></lesson_26>
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
-    <lesson_29></lesson_29>
+    <lesson_29>
+        <item>殺す</item>
+    </lesson_29>
+    <lesson_30></lesson_30>
 </Verb>
 
 
@@ -585,7 +627,7 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_2š></lesson_23>
+    <lesson_23></lesson_23>
     <lesson_24>
         <item>何才</item>
     </lesson_24>
@@ -594,6 +636,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Adverb>
 
 <Preposition>
@@ -626,6 +669,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Preposition>
 
 <Conjunction>
@@ -660,5 +704,6 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Conjunction>
 </Vocab>

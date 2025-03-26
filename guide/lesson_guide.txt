@@ -26,7 +26,11 @@
 26	- body parts
 27	- it (magic)	
 28 	- elements and spirits
-29 	- jorogumo
+29	- honor
+30 	- jorogumo
+31	- vampire
+32	- ghosts, spirits
+33	- yokai
 
 1-7 remains same, 
 9->8 done

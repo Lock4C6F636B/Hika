@@ -47,12 +47,19 @@
         <item>ごぜん</item>
         <item>ごご</item>
     </lesson_12>
-    <lesson_13></lesson_13>
+    <lesson_13>
+        <item>しっていますか</item>
+    </lesson_13>
     <lesson_14></lesson_14>
     <lesson_15></lesson_15>
     <lesson_16></lesson_16>
     <lesson_17></lesson_17>
-    <lesson_18></lesson_18>
+    <lesson_18>
+        <item>
+            <meaning>じゃ</meaning>
+            <meaning>でわ</meaning>
+        </item>
+    </lesson_18>
     <lesson_19>
     	<item>いってきます</item>
     	<item>いってらっしゃい</item>
@@ -67,6 +74,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Mixed>
 
 
@@ -119,8 +127,8 @@
         </item>
         <item>おなか</item>
         <item>
-            <meaning>れるぎー<meaning>
-            <meaning>アレルギー<meaning>
+            <meaning>れるぎー</meaning>
+            <meaning>アレルギー</meaning>
         </item>
     </lesson_5>
     <lesson_6>
@@ -241,6 +249,14 @@
             <meaning>にほんご</meaning>
             <meaning>にほんじん</meaning>
         </item>
+        <item>
+            <meaning>ぱそこん</meaning>
+            <meaning>こんぴゅうた</meaning>
+            <meaning>こんぴゅたあ</meaning>
+            <meaning>パソコン</meaning>
+            <meaning>コンピュウタ</meaning>
+            <meaning>コンピュウター</meaning>
+        </item>
     </lesson_15>
     <lesson_16></lesson_16>
     <lesson_17>
@@ -269,6 +285,7 @@
         <item>まど</item>
         <item>つくえ</item>
         <item>いす</item>
+        <item>てれび</item>
     </lesson_19>
     <lesson_20>
         <item>いしゃ</item>
@@ -283,6 +300,7 @@
             <meaning>にほんご</meaning>
             <meaning>にほんじん</meaning>
         </item>
+        <item>えいご</item>
         <item>せんせい</item>
     </lesson_21>
     <lesson_22></lesson_22>
@@ -323,19 +341,38 @@
     <lesson_26>
         <item>おなか</item>
     </lesson_26>
-    <lesson_27></lesson_27>
+    <lesson_27>
+        <item>
+            <meaning>ぱそこん</meaning>
+            <meaning>こんぴゅうた</meaning>
+            <meaning>こんぴゅたあ</meaning>
+            <meaning>パソコン</meaning>
+            <meaning>コンピュウタ</meaning>
+            <meaning>コンピュウター</meaning>
+        </item>
+        <item>まほ</item>
+    </lesson_27>
     <lesson_28>
         <item>にち</item>
         <item>ひ</item>
         <item>みず</item>
         <item>つき</item>
-        <item>き</item>
+        <item>
+            <meaning>き</meaning>
+            <meaning>たましい</meaning>
+        </item>
         <item>にほん</item>
     </lesson_28>
     <lesson_29>
+        <item>きょうふ</item>
+        <item>ふくしゅう</item>
+        <item>めいよ</item>
+        <item>ふめいよ</item>
+    </lesson_29>
+    <lesson_30>
         <item>つめ</item>
         <item>じょろうぐも</item>
-    </lesson_29>
+    </lesson_30>
 </Noun>
 
 
@@ -347,6 +384,7 @@
     <lesson_5>
         <item>おいしい</item>
         <item>まずい</item>
+        <item>からい</item>
     </lesson_5>
     <lesson_6>
         <item>すごい</item>
@@ -409,6 +447,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Adjective>
 
 
@@ -461,6 +500,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Pronoun>
 
 
@@ -514,6 +554,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Number>
 
 
@@ -521,7 +562,9 @@
     <lesson_1></lesson_1>
     <lesson_2></lesson_2>
     <lesson_3></lesson_3>
-    <lesson_4></lesson_4>
+    <lesson_4>
+        <item>かう</item>
+    </lesson_4>
     <lesson_5>
         <item>たべる</item>
     </lesson_5>
@@ -538,7 +581,9 @@
     <lesson_10></lesson_10>
     <lesson_11></lesson_11>
     <lesson_12></lesson_12>
-    <lesson_13></lesson_13>
+    <lesson_13>
+        <item>しる</item>
+    </lesson_13>
     <lesson_14></lesson_14>
     <lesson_15>
         <item>でかける</item>
@@ -560,7 +605,7 @@
         <item>ねる</item>
         <item>わすれる</item>
     </lesson_19>
-    <lesson_29></lesson_20>
+    <lesson_20></lesson_20>
     <lesson_21>
          <item>たつ</item>
          <item>べんきょうする</item>
@@ -572,7 +617,10 @@
     <lesson_26></lesson_26>
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
-    <lesson_29></lesson_29>
+    <lesson_29>
+        <item>ころす</item>
+    </lesson_29>
+    <lesson_30></lesson_30>
 </Verb>
 
 
@@ -614,6 +662,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Adverb>
 
 <Preposition>
@@ -646,6 +695,7 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Preposition>
 
 <Conjunction>
@@ -680,5 +730,6 @@
     <lesson_27></lesson_27>
     <lesson_28></lesson_28>
     <lesson_29></lesson_29>
+    <lesson_30></lesson_30>
 </Conjunction>
 </Vocab>
