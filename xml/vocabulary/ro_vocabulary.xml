@@ -36,7 +36,9 @@
         <item>etto</item>
         <item>uwa</item>
     </lesson_6>
-    <lesson_7></lesson_7>
+    <lesson_7>
+        <item>inaiinaibaa</item>
+    </lesson_7>
     <lesson_8></lesson_8>
     <lesson_9></lesson_9>
     <lesson_10></lesson_10>
@@ -50,10 +52,11 @@
     <lesson_15></lesson_15>
     <lesson_16></lesson_16>
     <lesson_17></lesson_17>
-    <lesson_18>
+    <lesson_18></lesson_18>
+    <lesson_19>
     	<item>ittekimasu</item>
     	<item>itterasshai</item>
-    </lesson_18>
+    </lesson_19>
     <lesson_19></lesson_19>
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
@@ -62,6 +65,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Mixed>
 
 
@@ -96,6 +102,9 @@
         <item>pan</item>
         <item>chikin</item>
         <item>furaido chikin</item>
+        <item>doraibusuruu</item>
+        <item>onaka</item>
+        <item>arerugii</item>
     </lesson_5>
     <lesson_6>
         <item>san</item>
@@ -112,6 +121,9 @@
         <item>kazoku</item>
         <item>arubamu</item>
         <item>imouto</item>
+        <item>otouto</item>
+        <item>ane</item>
+        <item>ani</item>
         <item>
             <meaning>otousan</meaning>
             <meaning>chichi</meaning>
@@ -123,6 +135,7 @@
             <meaning>mama</meaning>
         </item>
         <item>kodomo</item>
+        <item>akachan</item>
     </lesson_7>
     <lesson_8>
         <item>toire</item>
@@ -131,6 +144,7 @@
         <item>ginko</item>
         <item>koko</item>
         <item>mise</item>
+        <item>konbini</item>
         <item>eki</item>
     </lesson_8>
     <lesson_9>
@@ -196,28 +210,29 @@
             <meaning>nihonjin</meaning>
         </item>
     </lesson_15>
-    <lesson_16>
+    <lesson_16></lesson_16>
+    <lesson_17>
         <item>megane</item>
         <item>boshi</item>
         <item>poketto</item>
-    </lesson_16>
-    <lesson_17>
+    </lesson_17>
+    <lesson_18>
         <item>kekkon</item>
         <item>jinsei</item>
         <item>seikatsu</item>
-    </lesson_17>
-    <lesson_18>
+    </lesson_18>
+    <lesson_19>
         <item>naifu</item>
         <item>ofuro</item>
         <item>teeburu</item>
         <item>mado</item>
         <item>tsukue</item>
         <item>isu</item>
-    </lesson_18>
-    <lesson_19>
-    	<item>isha</item>
     </lesson_19>
     <lesson_20>
+    	<item>isha</item>
+    </lesson_20>
+    <lesson_21>
         <item>tesuto</item>
         <item>mondai</item>
         <item>
@@ -225,11 +240,15 @@
         <meaning>nihonjin</meaning>
         </item>
         <item>sensei</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23></lesson_23>
+    <lesson_23>
+        <item>yotei</item>
+    </lesson_23>
     <lesson_24>
+        <item>sai</item>
+    </lesson_24>
+    <lesson_25>
         <item>doubutsu</item>
         <item>neko</item>
         <item>inu</item>
@@ -237,19 +256,24 @@
         <item>gorira<item>
         <item>raion</item>
         <item>ushi</item>
-    </lesson_24>
-    <lesson_25>
+        <item>akachan</item>
+    </lesson_25>
+    <lesson_26>
+        <item>onaka</item>
+    </lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28>
         <item>nichi</item>
         <item>hi</item>
         <item>mizu</item>
         <item>tsuki</item>
         <item>ki</item>
         <item>nihon</item>
-    </lesson_25>
-    <lesson_26>
+    </lesson_28>
+    <lesson_29>
         <item>tsume</item>
         <item>jorogumo</item>
-    </lesson_26>
+    </lesson_29>
 </Noun>
 
 
@@ -305,20 +329,24 @@
     <lesson_15>
         <item>muzukashii</item>
     </lesson_15>
-    <lesson_16>
+    <lesson_16></lesson_16>
+    <lesson_17>
         <item>kitanai</item>
-    </lesson_16>
-    <lesson_17></lesson_17>
-    <lesson_18></lesson_18>
+    </lesson_17>
+    <lesson_1á></lesson_18>
     <lesson_19></lesson_19>
-    <lesson_20>
+    <lesson_20></lesson_20>
+    <lesson_21>
     	<item>muzukashii</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
+    <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Adjective>
 
 
@@ -368,6 +396,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Pronoun>
 	
 	
@@ -409,16 +440,19 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23>
-        <item>sai</item>
+    <lesson_23></lesson_23>
+    <lesson_24>
         <item>issai</item>
         <item>hassai</item>
         <item>juussai</item>
         <item>hatachi</item>
-    </lesson_23>
+    </lesson_24>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Number>
 
 
@@ -451,32 +485,35 @@
         <item>kaku</item>
         <item>benkyou suru</item>
     </lesson_15>
-    <lesson_16>
-        <item>nugu</item>
-    </lesson_16>
+    <lesson_16></lesson_16>
     <lesson_17>
+        <item>nugu</item>
+    </lesson_17>
+    <lesson_18>
         <item>shinu</item>
         <item>kekkon suru</item>
         <item>umareru</item>
         <item>ikiru</item>
-    </lesson_17>
-    <lesson_18>
-        <item>neru</item>
-        <item>wasureru</item>
     </lesson_18>
     <lesson_19>
-        <item>isha</item>
+        <item>neru</item>
+        <item>wasureru</item>
     </lesson_19>
     <lesson_20>
+        <item>isha</item>
+    </lesson_20>
+    <lesson_21>
         <item>tatsu</item>
         <item>benkyou suru</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Verb>	
 	
 	
@@ -509,12 +546,15 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23>
+    <lesson_23></lesson_23>
+    <lesson_24>
         <item>nansai</item>
-    </lesson_23>
-    <lesson_24></lesson_24>
+    </lesson_25>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Adverb>
 
 <Preposition>
@@ -544,6 +584,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Preposition>
 
 <Conjunction>
@@ -575,5 +618,8 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Conjunction>
 </Vocab>

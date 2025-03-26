@@ -13,17 +13,20 @@
 13 	- me
 14 	- people (characteristics/trait)
 15 	- activities
-16 	- fashion
-17 	- life
-18 	- home and utensils
-19	- health
-20 	- school
-21 	- work
-22	- future
-23	- age
-24 	- animals
-25 	- elements and spirits
-26 	- jorogumo
+16	- like, dislike
+17 	- fashion
+18 	- life
+19 	- home and utensils
+20	- health
+21 	- school
+22 	- work
+23	- future
+24	- age
+25 	- animals
+26	- body parts
+27	- it (magic)	
+28 	- elements and spirits
+29 	- jorogumo
 
 1-7 remains same, 
 9->8 done

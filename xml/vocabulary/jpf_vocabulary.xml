@@ -39,7 +39,9 @@
         <item>えっと</item>
         <item>ウワ</item>
     </lesson_6>
-    <lesson_7></lesson_7>
+    <lesson_7>
+        <item>いないいないばあ</item>
+    </lesson_7>
     <lesson_8></lesson_8>
     <lesson_9></lesson_9>
     <lesson_10></lesson_10>
@@ -53,11 +55,11 @@
     <lesson_15></lesson_15>
     <lesson_16></lesson_16>
     <lesson_17></lesson_17>
-    <lesson_18>
+    <lesson_18></lesson_18>
+    <lesson_19>
     	<item>行ってきます</item>
     	<item>行ってらっしゃい</item>
-    </lesson_18>
-    <lesson_19></lesson_19>
+    </lesson_19>
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
@@ -65,6 +67,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Mixed>
 
 
@@ -102,6 +107,12 @@
         <item>パン</item>
         <item>チキン</item>
         <item>フライドチキン</item>
+        <item>
+            <meaning>どらいぶするう</meaning>
+            <meaning>ドライブスルー</meaning>
+        </item>
+        <item>お腹</item>
+        <item>アレルギー</item>
     </lesson_5>
     <lesson_6>
         <item>さん</item>
@@ -118,6 +129,9 @@
         <item>家族</item>
         <item>アルバム</item>
         <item>妹</item>
+        <item>弟</item>
+        <item>姉</item>
+        <item>兄</item>
         <item>
             <meaning>お父さん</meaning>
             <meaning>父</meaning>
@@ -129,6 +143,7 @@
             <meaning>ママ</meaning>
         </item>
         <item>子供</item>
+        <item>赤ちゃん</item>
     </lesson_7>
     <lesson_8>
             <item>トイレ</item>
@@ -137,6 +152,10 @@
             <item>銀行</item>
             <item>ここ</item>
             <item>店</item>
+            <item>
+                <meaning>こんびに　</meaning>
+                <meaning>コンビニ</meaning>
+            </item>
             <item>駅</item>
     </lesson_8>
     <lesson_9>
@@ -205,28 +224,29 @@
             <meaning>日本人</meaning>
         </item>
     </lesson_15>
-    <lesson_16>
+    <lesson_16></lesson_16>
+    <lesson_17>
         <item>眼鏡</item>
         <item>帽子</item>
         <item>ポケット</item>
-    </lesson_16>
-    <lesson_17>
+    </lesson_17>
+    <lesson_18>
         <item>結婚</item>
         <item>人生</item>
         <item>生活</item>
-    </lesson_17>
-    <lesson_18>
+    </lesson_18>
+    <lesson_19>
         <item>ナイフ</item>
         <item>お風呂</item>
         <item>テーブル</item>
         <item>窓</item>
         <item>机</item>
         <item>椅子</item>
-    </lesson_18>
-    <lesson_19>
-        <item>医者</item>
     </lesson_19>
     <lesson_20>
+        <item>医者</item>
+    </lesson_20>
+    <lesson_21>
         <item>テスト</item>
         <item>問題</item>
         <item>
@@ -234,11 +254,15 @@
             <meaning>日本人</meaning>
         </item>
         <item>先生</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23></lesson_23>
+    <lesson_23>
+        <item>予定</item>
+    </lesson_23>
     <lesson_24>
+        <item>才</item>
+    </lesson_24>
+    <lesson_25>
         <item>動物</item>
         <item>
             <meaning>猫</meaning>
@@ -257,19 +281,24 @@
         <item>ゴリラ</item>
         <item>ライオン</item>
         <item>牛</item>
-    </lesson_24>
-    <lesson_25>
+        <item>赤ちゃん</item>
+    </lesson_25>
+    <lesson_26>
+        <item>お腹</item>
+    </lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28>
         <item>日</item>
         <item>火</item>
         <item>水</item>
         <item>月</item>
         <item>気</item>
         <item>日本</item>
-    </lesson_25>
-    <lesson_26>
+    </lesson_28>
+    <lesson_29>
         <item>爪</item>
         <item>絡新婦</item>
-    </lesson_26>
+    </lesson_29>
 </Noun>
 
 
@@ -337,21 +366,24 @@
     <lesson_15>
         <item>難しい</item>
     </lesson_15>
-    <lesson_16>
+    <lesson_16></lesson_16>
+    <lesson_17>
         <item>汚い</item>
-    </lesson_16>
-    <lesson_17></lesson_17>
+    </lesson_17>
     <lesson_18></lesson_18>
     <lesson_19></lesson_19>
-    <lesson_20>
+    <lesson_20></lesson_20>
+    <lesson_21>
     	<item>難しい</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Adjective>
 
 
@@ -401,6 +433,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Pronoun>
 
 
@@ -442,16 +477,18 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23>
-        <item>才</item>
+    <lessonm_23></lesson_23>
+    <lesson_24>
         <item>一切</item>
         <item>八才</item>
         <item>十才</item>
         <item>二十歳</item>
-    </lesson_23>
-    <lesson_24></lesson_24>
+    </lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Number>
 
 
@@ -487,32 +524,35 @@
         <item>書く</item>
         <item>勉強する</item>
     </lesson_15>
-    <lesson_16>
-        <item>脱ぐ</item>
-    </lesson_16>
+    <lesson_16></lesson_16>
     <lesson_17>
+        <item>脱ぐ</item>
+    </lesson_17>
+    <lesson_18>
          <item>死ぬ</item>
          <item>結婚する</item>
          <item>生まれる</item>
          <item>生きる</item>
-    </lesson_17>
-    <lesson_18>
-        <item>寝る</item>
-        <item>忘れる</item>
     </lesson_18>
     <lesson_19>
-        <item>医者</item>
+        <item>寝る</item>
+        <item>忘れる</item>
     </lesson_19>
     <lesson_20>
+        <item>医者</item>
+    </lesson_20>
+    <lesson_21>
         <item>立つ</item>
         <item>勉強する</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Verb>
 
 
@@ -545,12 +585,15 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23>
+    <lesson_2š></lesson_23>
+    <lesson_24>
         <item>何才</item>
-    </lesson_23>
-    <lesson_24></lesson_24>
+    </lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Adverb>
 
 <Preposition>
@@ -580,6 +623,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Preposition>
 
 <Conjunction>
@@ -611,5 +657,8 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Conjunction>
 </Vocab>

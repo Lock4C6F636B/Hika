@@ -36,7 +36,9 @@
         <item>えっと</item>
         <item>うわ</item>
     </lesson_6>
-    <lesson_7></lesson_7>
+    <lesson_7>
+        <item>いないいないばあ</item>
+    </lesson_7>
     <lesson_8></lesson_8>
     <lesson_9></lesson_9>
     <lesson_11></lesson_11>
@@ -50,11 +52,11 @@
     <lesson_15></lesson_15>
     <lesson_16></lesson_16>
     <lesson_17></lesson_17>
-    <lesson_18>
+    <lesson_18></lesson_18>
+    <lesson_19>
     	<item>いってきます</item>
     	<item>いってらっしゃい</item>
-    </lesson_18>
-    <lesson_19></lesson_19>
+    </lesson_19>
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
@@ -62,6 +64,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Mixed>
 
 
@@ -108,6 +113,15 @@
             <meaning>ふらいどちきん</meaning>
             <meaning>フライドチキン</meaning>
         </item>
+        <item>
+            <meaning>どらいぶするう</meaning>
+            <meaning>ドライブスルー</meaning>
+        </item>
+        <item>おなか</item>
+        <item>
+            <meaning>れるぎー<meaning>
+            <meaning>アレルギー<meaning>
+        </item>
     </lesson_5>
     <lesson_6>
         <item>さん</item>
@@ -124,6 +138,9 @@
         <item>かぞく</item>
         <item>あるばむ</item>
         <item>いもうと</item>
+        <item>おとうと</item>
+        <item>あね</item>
+        <item>あに</item>
         <item>
             <meaning>おとさん</meaning>
             <meaning>ちち</meaning>
@@ -135,6 +152,7 @@
             <meaning>まま</meaning>
         </item>
         <item>こども</item>
+        <item>あかちゃん</item>
     </lesson_7>
     <lesson_8>
         <item>
@@ -149,6 +167,10 @@
         <item>ぎんこう</item>
         <item>ここ</item>
         <item>みせ</item>
+        <item>
+            <meaning>こんびに　</meaning>
+            <meaning>コンビニ</meaning>
+        </item>
         <item>えき</item>
     </lesson_8>
     <lesson_9>
@@ -220,20 +242,21 @@
             <meaning>にほんじん</meaning>
         </item>
     </lesson_15>
-    <lesson_16>
+    <lesson_16></lesson_16>
+    <lesson_17>
         <item>めがね</item>
         <item>ぼうし</item>
         <item>
         <meaning>ぽけっと</meaning>
         <meaning>ポケット</meaning>
         </item>
-    </lesson_16>
-    <lesson_17>
+    </lesson_17>
+    <lesson_18>
         <item>けっこん</item>
         <item>じんせい</item>
         <item>せいかつ</item>
-    </lesson_17>
-    <lesson_18>
+    </lesson_18>
+    <lesson_19>
         <item>
         <meaning>ないふ</meaning>
         <meaning>ナイフ</meaning>
@@ -246,11 +269,11 @@
         <item>まど</item>
         <item>つくえ</item>
         <item>いす</item>
-    </lesson_18>
-    <lesson_19>
-        <item>いしゃ</item>
     </lesson_19>
     <lesson_20>
+        <item>いしゃ</item>
+    </lesson_20>
+    <lesson_21>
         <item>
         <meaning>てすと</meaning>
         <meaning>テスト</meaning>
@@ -261,11 +284,15 @@
             <meaning>にほんじん</meaning>
         </item>
         <item>せんせい</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23></lesson_23>
+    <lesson_23>
+        <item>よてい</item>
+    </lesson_23>
     <lesson_24>
+        <item>さい</item>
+    </lesson_24>
+    <lesson_25>
         <item>どうぶつ</item>
         <item>
             <meaning>ねこ</meaning>
@@ -291,19 +318,24 @@
             <meaning>うし</meaning>
             <meaning>ウシ</meaning>
         </item>
-    </lesson_24>
-    <lesson_25>
+        <item>あかちゃん</item>
+    </lesson_25>
+    <lesson_26>
+        <item>おなか</item>
+    </lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28>
         <item>にち</item>
         <item>ひ</item>
         <item>みず</item>
         <item>つき</item>
         <item>き</item>
         <item>にほん</item>
-    </lesson_25>
-    <lesson_26>
+    </lesson_28>
+    <lesson_29>
         <item>つめ</item>
         <item>じょろうぐも</item>
-    </lesson_26>
+    </lesson_29>
 </Noun>
 
 
@@ -359,21 +391,24 @@
     <lesson_15>
         <item>むずかしい</item>
     </lesson_15>
-    <lesson_16>
+    <lesson_16></lesson_16>
+    <lesson_17>
         <item>きたない</item>
-    </lesson_16>
-    <lesson_17></lesson_17>
+    </lesson_17>
     <lesson_18></lesson_18>
     <lesson_19></lesson_19>
-    <lesson_20>
+    <lesson_20></lesson_20>
+    <lesson_21>
     	<item>むずかしい</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Adjective>
 
 
@@ -423,6 +458,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Pronoun>
 
 
@@ -464,16 +502,18 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23>
-        <item>さい</item>
+    <lesson_23></lesson_23>
+    <lesson_24>
         <item>いっさい</item>
         <item>はっさい</item>
         <item>じゅうっさい</item>
         <item>はたち</item>
-    </lesson_23>
-    <lesson_24></lesson_24>
+    </lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Number>
 
 
@@ -506,30 +546,33 @@
         <item>かく</item>
         <item>べんきょうする</item>
     </lesson_15>
-    <lesson_16>
-        <item>ぬぐ</item>
-    </lesson_16>
+    <lesson_16></lesson_16>
     <lesson_17>
+        <item>ぬぐ</item>
+    </lesson_17>
+    <lesson_18>
         <item>しぬ</item>
         <item>けっこんする</item>
         <item>うまれる</item>
         <item>いきる</item>
-    </lesson_17>
-    <lesson_18>
+    </lesson_18>
+    <lesson_19>
         <item>ねる</item>
         <item>わすれる</item>
-    </lesson_18>
-    <lesson_19></lesson_19>
-    <lesson_20>
+    </lesson_19>
+    <lesson_29></lesson_20>
+    <lesson_21>
          <item>たつ</item>
          <item>べんきょうする</item>
-    </lesson_20>
-    <lesson_21></lesson_21>
+    </lesson_21>
     <lesson_22></lesson_22>
     <lesson_23></lesson_23>
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Verb>
 
 
@@ -562,12 +605,15 @@
     <lesson_20></lesson_20>
     <lesson_21></lesson_21>
     <lesson_22></lesson_22>
-    <lesson_23>
+    <lesson_23></lesson_23>
+    <lesson_24>
         <item>なんさい</item>
-    </lesson_23>
-    <lesson_24></lesson_24>
+    </lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Adverb>
 
 <Preposition>
@@ -597,6 +643,9 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Preposition>
 
 <Conjunction>
@@ -628,5 +677,8 @@
     <lesson_24></lesson_24>
     <lesson_25></lesson_25>
     <lesson_26></lesson_26>
+    <lesson_27></lesson_27>
+    <lesson_28></lesson_28>
+    <lesson_29></lesson_29>
 </Conjunction>
 </Vocab>
