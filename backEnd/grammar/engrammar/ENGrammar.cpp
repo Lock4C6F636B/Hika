@@ -69,17 +69,17 @@ std::string engrammar::v_past(std::string& verb, const uint8_t &tense) {
 }
 
 
-std::string engrammar::ly(std::string &adjective){
+std::string engrammar::ly(std::string_view adjective){
     if (auto exception = ly_adjectives->find_and_replace(adjective, 1)) { //handles exceptions
         return std::string(*exception); // Convert string_view to string
     }
 
     // Check if the word ends with the current ending
-    if (auto transformed = lyTransformMap.find_replace_ending(adjective)) {
+    if (auto transformed = lyTransformMap.find_replace_ending((std::string)adjective)) {
         return *transformed;
     }
 
-    return adjective+"ly";
+    return (std::string)adjective+"ly";
 }
 
 //transform word into ing form

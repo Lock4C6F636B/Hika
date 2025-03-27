@@ -1,5 +1,5 @@
 HiKa {
-    background-image: url(:/resources/haku1.png);
+    background-image: url(:/resources/hussle1.png);
     /*
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.866, y2:0.728366, stop:0.00811359 rgba(201, 94, 17, 255), stop:0.0516055 rgba(169, 52, 13, 255), stop:0.148467 rgba(173, 20, 9, 255), stop:0.225291 rgba(126, 18, 4, 255), stop:0.350291 rgba(71, 14, 0, 255), stop:0.456897 rgba(35, 9, 13, 255), stop:0.572319 rgba(3, 4, 17, 255));
     */
@@ -7,7 +7,7 @@ HiKa {
 
 /* Make WBWindow style more specific and force it */
 QWidget#WBWindow {
-    image: url(:/resources/haku1.png);
+    background-image: url(:/resources/hussle1.png);
     /*
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.866, y2:0.728366, stop:0.00811359 rgba(201, 94, 17, 255), stop:0.0516055 rgba(169, 52, 13, 255), stop:0.148467 rgba(173, 20, 9, 255), stop:0.225291 rgba(126, 18, 4, 255), stop:0.350291 rgba(71, 14, 0, 255), stop:0.456897 rgba(35, 9, 13, 255), stop:0.572319 rgba(3, 4, 17, 255)) !important;
     */

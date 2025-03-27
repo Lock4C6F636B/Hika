@@ -114,7 +114,7 @@ void InflectionMaster::inscribe() const noexcept {
                     word = engrammar::ly(word); //need to add space, object will be following
                 }
                 else {
-                    word = data.third_p ? engrammar::be("he",format) + word : engrammar::be("you",format) + word;
+                    word = data.third_p ? engrammar::be("he",format) + " " + word : engrammar::be("you",format) + " " + word;
                 }
             }
             else if (type == 5){

@@ -4,12 +4,13 @@
 int Sentencer::start() {
     data.reset_specifier(); //reset specifier before using, default value -1 is very important
     buddha_sutras.clear(); //reset vector of correct answers
+    buddha_sutras.push_back(std::vector<std::string>()); //VERY IMPORTANT push in empty string, whole system is working on +=
     std::random_device rd; //set rng
     std::mt19937 gen(rd());
 
     //HERE REWRITE TO 0,2 WHEN TE FORM IS FUNCTIONAL
     //pick template type
-    std::uniform_int_distribution<uint8_t> template_dist(0, 1);  //number of template sentences, currently i have only one
+    std::uniform_int_distribution<uint8_t> template_dist(0, 3);  //number of template sentences, currently i have only one
     data.template_type = template_dist(gen);
 
 
@@ -34,9 +35,12 @@ int Sentencer::start() {
     }
     else if(data.template_type == 2 || data.template_type == 3){
         sub_weights = { 0, 10, 0, 8, 1, 5, 0, 0, 0 };
-        obj_weights = { 0, 5, 10, 1, 2, 10, 0, 0, 0 };
+        obj_weights = { 0, 0, 1, 0, 0, 1, 0, 0, 0 };
         std::vector<int> specif_weights { 0, 0, 1, 0, 0, 1, 0, 0, 0 };
-        data.specif_type = gen_type(specif_weights); //need to allocate weights only in this case, therefore must generate specifier type here
+        do {
+            data.specif_type = gen_type(specif_weights); //need to allocate weights only in this case, therefore must generate specifier type here
+        } while(data.specif_type == 5 && data.obj_type != 5); //ensure that specifier cannot be verb, because expanding none verb by verb is not possible... eg. cannot specify "cute" by "run"
+
     }
 
     //weights set, generate the number
@@ -66,10 +70,7 @@ int Sentencer::start() {
     if(data.specif_type != -1){
         data.specif_index = gen_num_to(library->type_size(data.specif_type, vocabSelect::first));
         data.specif_mean = gen_num_to(library->mean_size(data.obj_type, data.specif_index, vocabSelect::first));
-
-        //this smells funky, CHECK BACK HERE WHEN YOU HAVE MORE CLARITY
-        std::uniform_int_distribution<> specif_format_dist(0, 5); //format for specifier, including te form
-        data.format = specif_format_dist(gen);
+        data.specif_format = 5;
     }
 
     //generate format... FOR SAFETY REASONS DISALLOW SHOULD FOR NONE VERBS
@@ -225,9 +226,7 @@ std::string Sentencer::JPbuild_prompt_simple() const {
 };
 
 //build japanese sentence answers
-int Sentencer::JPbuild_sentence_simple() const {
-    buddha_sutras.push_back(std::vector<std::string>()); //important to do
-
+int Sentencer::JPbuild_sentence_simple() const {    
 	//lambda to add each meaning of word to each comparasion sentences
     auto add_word = [this](const size_t &type, const size_t& index, bool is_last) {
         std::vector<std::vector<std::string>> new_sentences;
@@ -308,16 +307,137 @@ int Sentencer::JPbuild_sentence_simple() const {
 }
 
 
-std::string Sentencer::JPbuild_prompt_te_form() const{ return "string";}
+std::string Sentencer::JPbuild_prompt_te_form() const{
+    std::string prompt;
 
-int Sentencer::JPbuild_sentence_te_form() const { return 0;}
+    //add subject to sentence
+    if ((data.sub_type == 2) || (data.sub_type == 5)) {
+        prompt = jpgrammar::subjectify(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first), data.sub_type);
+    } else prompt = library->pick(data.sub_type, data.sub_index, data.sub_mean,vocabSelect::first);
+
+    //debug
+    std::cout<<"jp prompt start "<<library->pick(data.obj_type,data.obj_index,data.obj_mean,vocabSelect::first)<<", "<<library->pick(data.sub_type,data.sub_index,data.sub_mean,vocabSelect::first)<<std::endl;
+
+    //add particle
+    prompt += particles[data.particle];
+
+    //add object to sentence
+    auto format_word = [&library = this->library](const size_t &type, const size_t &index, const size_t &mean, const size_t &format, const bool &formal) -> std::string {
+        switch (type){
+        case 2: {
+            std::cout<<"i see adjective"<<std::endl;
+            std::string adjective = library->pick(type, index, mean,vocabSelect::first);
+            return jpgrammar::format_adj(adjective,format,formal);
+        }
+        case 5: {
+            std::string verb = library->pick(type, index, mean,vocabSelect::first);
+            return jpgrammar::format_verb(verb,format, formal);
+        }
+        default: {
+            std::string word = library->pick(type, index, mean,vocabSelect::first);
+            return jpgrammar::desu(word,format);
+        }
+        }
+    };
+
+
+    prompt+= format_word(data.specif_type,data.specif_index,data.specif_mean,data.specif_format,data.formal); //add formated specifier
+    prompt+= format_word(data.obj_type,data.obj_index,data.obj_mean,data.format,data.formal); //add formated object
+
+
+    if(data.template_type == 3){
+        prompt += "か";
+    }
+
+    return prompt;
+}
+
+int Sentencer::JPbuild_sentence_te_form() const {
+    //lambda to add each meaning of word to each comparasion sentences
+    auto add_word = [this](const size_t &type, const size_t &index, const size_t &format, bool is_last) {
+        std::vector<std::vector<std::string>> new_sentences;
+        for (const auto &sentence : buddha_sutras) { //run through already generated
+            for (size_t mean = 0; mean < library->mean_size(type, index,vocabSelect::second); ++mean) { //run through available meanings
+                std::string word = library->pick(type, index, mean, vocabSelect::second); //pick word from database
+                if (is_last) { //object of sentence need formatting
+                    switch (type) {
+                    case 2:
+                        word = jpgrammar::format_adj(word, format, data.formal);
+                        break;
+                    case 5:
+                        word = jpgrammar::format_verb(word, format, data.formal);
+                        break;
+                    default:
+                        word = jpgrammar::desu(word, format);
+                        break;
+                    }
+                }
+                else { //standard case
+                    if (type == 5) { word = jpgrammar::subjectify(word, data.sub_type); //adjectives and verbs need to be subjetified
+                    }
+                }
+                std::vector<std::string> new_sentence = sentence;
+                new_sentence.push_back(word);//put each meaning into index
+                new_sentences.push_back(new_sentence);
+            }
+        }
+        buddha_sutras = std::move(new_sentences);
+    };
+
+
+    //add subject
+    add_word(data.sub_type, data.sub_index, data.format, false); //add subject to strings of sentences.. note data.format is completely useless here
+
+
+    //add particle
+    if (data.particle == 0 || data.particle == 1) {
+        std::vector<std::vector<std::string>> with_particle;
+
+        for (const auto& sentence : buddha_sutras) {
+            //store copy with は
+            {
+                std::vector<std::string> new_sentence = sentence;
+                new_sentence.push_back(particles[0]);
+                with_particle.push_back(new_sentence);
+            }
+
+            //store copy with が
+            {
+                std::vector<std::string> new_sentence = sentence;
+                new_sentence.push_back(particles[1]);
+                with_particle.push_back(new_sentence);
+            }
+        }
+
+        buddha_sutras = std::move(with_particle);
+    } else {
+        // Add the specified particle to all sentences
+        for (auto& sentence : buddha_sutras) {
+            sentence.push_back(particles[data.particle]);
+        }
+    }
+
+
+    add_word(data.specif_type, data.specif_index, data.specif_format,true); //add formatted specifier
+    add_word(data.obj_type, data.obj_index, data.format,true); //add formatted object
+
+
+    //add ka, if question
+    if(data.template_type == 3){
+        for(std::vector<std::string> &sentence : buddha_sutras){
+            sentence.push_back("か");
+        }
+    }
+
+    return 0;
+}
 
 //ENGLISH--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //build english prompt sentence
 std::string Sentencer::ENbuild_prompt_simple() const {
-	std::string prompt;
+    std::string prompt;
 
-    //for template 1, do or be needs to be first
+    //for template 1 (question), do or be needs to be first
     if(data.template_type == 1){
         if(data.obj_type != 5){
             prompt += engrammar::be(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first),data.format);
@@ -370,8 +490,6 @@ std::string Sentencer::ENbuild_prompt_simple() const {
 
 //build english sentence answers
 int Sentencer::ENbuild_sentence_simple() const {
-    buddha_sutras.push_back(std::vector<std::string>()); //important to do
-
     //lambda to add each meaning of word to each comparasion sentences
     auto add_word = [this](const size_t& type, const size_t& index,bool is_last) {
         std::vector<std::vector<std::string>> new_sentences;
@@ -436,7 +554,90 @@ int Sentencer::ENbuild_sentence_simple() const {
 }
 
 
-std::string Sentencer::ENbuild_prompt_te_form() const { return "string";}
+std::string Sentencer::ENbuild_prompt_te_form() const {
+    std::string prompt;
+
+    //for template 3 (question), do or be needs to be first
+    if(data.template_type == 3){
+        if(data.obj_type != 5){
+            prompt += engrammar::be(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first),data.format);
+        }
+        else{
+            prompt += engrammar::dot(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first),data.format);
+        }
+        prompt += " "; //add space after
+    }
+
+    //add subject to sentence
+    if (data.sub_type == 5) {
+        std::string subject = library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first);
+        prompt += engrammar::subjectify(subject); //transform if verb
+    }else prompt += library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first);
+    prompt += " "; //add space
+
+
+    if(data.template_type == 2){
+        if(data.obj_type == 5 && data.specif_type == 5){
+            //add subject
+            std::string verb = library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::first);
+            verb = engrammar::format_verb(verb, data.format, library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first)); //format verb specifier
+            prompt += verb; //add to sentence
+
+            prompt += " and "; //add conjugation
+
+            //add object, need to keep infinite if specifier already has did in front
+            verb = library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::first);
+            prompt += (data.obj_type%2 == 0)? engrammar::format_verb(verb, data.format, library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first)) : verb; //if did is not at front, format
+        }
+        else if(data.specif_type == 2 && data.obj_type == 5){
+            std::string verb = library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::first);
+            verb = engrammar::format_verb(verb, data.format, library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first)); //format verb specifier
+            prompt += verb; //add to sentence
+            prompt += " "; //add space
+
+            //add specifier as adverb... note, sounds best as last
+            prompt += engrammar::ly(library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::first));
+        }
+        else{
+            prompt += engrammar::be(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first), data.format);
+            prompt += " ";
+            prompt += library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::first);
+            prompt += " and ";
+            prompt += library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::first);
+        }
+    }
+    else{ //question, do/be is at front of sentence already
+        if(data.specif_type == 2 && data.obj_type == 5){
+            std::string verb = library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::first);
+            prompt += verb; //add object
+            prompt += " ";
+
+            prompt += engrammar::ly(library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::first)); //add specifier as adverb
+        }
+        else{
+            std::string word = library->pick(data.specif_type, data.specif_index, data.specif_mean, vocabSelect::first);
+            prompt += word; //add object
+            prompt += " and "; //add conjugation
+            prompt += library->pick(data.obj_type, data.obj_index, data.obj_mean, vocabSelect::first); //add specifier
+        }
+    }
+
+
+    switch (data.particle) {
+    case 2:
+        prompt += " too";
+    }
+
+    if(data.template_type == 3){
+        prompt += "?";
+    }
+
+
+    //debug prompt;
+    std::cerr<<prompt<<std::endl;
+
+    return prompt;
+}
 
 int Sentencer::ENbuild_sentence_te_form() const{ return 0;}
 

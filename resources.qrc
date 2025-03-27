@@ -34,6 +34,8 @@
         <file>resources/dk4.png</file>
         <file>resources/vengeance2.png</file>
         <file>resources/onni1.png</file>
+        <file>resources/hunt1.png</file>
+        <file>resources/hussle1.png</file>
     </qresource>
     <qresource prefix="/audio_vocabulary">
         <file>resources/audio_vocabulary/ゆれい/en/en_ありがとうございます.mp3</file>

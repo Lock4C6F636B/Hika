@@ -17,7 +17,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>HiKa</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/resources/おねんね猫さん.png</normaloff>:/resources/おねんね猫さん.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -30,7 +34,7 @@
     <item row="0" column="0">
      <widget class="QStackedWidget" name="windowPages">
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_0">
        <layout class="QGridLayout" name="gridLayout_2">
@@ -470,8 +474,11 @@
            <widget class="QRadioButton" name="lessonButton_1">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);</string>
             </property>
             <property name="text">
              <string>1. greetings,introduction</string>
@@ -491,7 +498,7 @@
            <widget class="QRadioButton" name="lessonButton_9">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -516,7 +523,7 @@
              </font>
             </property>
             <property name="text">
-             <string>17. life</string>
+             <string>17. fashion</string>
             </property>
             <property name="iconSize">
              <size>
@@ -537,7 +544,7 @@
              </font>
             </property>
             <property name="text">
-             <string>25. jorogumo</string>
+             <string>25. animals</string>
             </property>
             <property name="iconSize">
              <size>
@@ -554,7 +561,7 @@
            <widget class="QRadioButton" name="lessonButton_2">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -575,7 +582,7 @@
            <widget class="QRadioButton" name="lessonButton_10">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -600,7 +607,7 @@
              </font>
             </property>
             <property name="text">
-             <string>18. home</string>
+             <string>18. life</string>
             </property>
             <property name="iconSize">
              <size>
@@ -621,7 +628,7 @@
              </font>
             </property>
             <property name="text">
-             <string>lesson 26</string>
+             <string>26. body</string>
             </property>
             <property name="iconSize">
              <size>
@@ -638,7 +645,7 @@
            <widget class="QRadioButton" name="lessonButton_3">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -659,7 +666,7 @@
            <widget class="QRadioButton" name="lessonButton_11">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -684,7 +691,7 @@
              </font>
             </property>
             <property name="text">
-             <string>19. health</string>
+             <string>19. home</string>
             </property>
             <property name="iconSize">
              <size>
@@ -705,7 +712,7 @@
              </font>
             </property>
             <property name="text">
-             <string>lesson 27</string>
+             <string>27. computers</string>
             </property>
             <property name="iconSize">
              <size>
@@ -722,7 +729,7 @@
            <widget class="QRadioButton" name="lessonButton_4">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -743,7 +750,7 @@
            <widget class="QRadioButton" name="lessonButton_12">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -768,7 +775,7 @@
              </font>
             </property>
             <property name="text">
-             <string>20. school</string>
+             <string>20. health</string>
             </property>
             <property name="iconSize">
              <size>
@@ -789,7 +796,7 @@
              </font>
             </property>
             <property name="text">
-             <string>lesson 28</string>
+             <string>28. elements</string>
             </property>
             <property name="iconSize">
              <size>
@@ -806,7 +813,7 @@
            <widget class="QRadioButton" name="lessonButton_5">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -827,7 +834,7 @@
            <widget class="QRadioButton" name="lessonButton_13">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -852,7 +859,7 @@
              </font>
             </property>
             <property name="text">
-             <string>21. work</string>
+             <string>21. school</string>
             </property>
             <property name="iconSize">
              <size>
@@ -873,7 +880,7 @@
              </font>
             </property>
             <property name="text">
-             <string>lesson 29</string>
+             <string>29. honor</string>
             </property>
             <property name="iconSize">
              <size>
@@ -890,7 +897,7 @@
            <widget class="QRadioButton" name="lessonButton_6">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -911,7 +918,7 @@
            <widget class="QRadioButton" name="lessonButton_14">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -936,7 +943,7 @@
              </font>
             </property>
             <property name="text">
-             <string>22. future</string>
+             <string>22. work</string>
             </property>
             <property name="iconSize">
              <size>
@@ -957,7 +964,7 @@
              </font>
             </property>
             <property name="text">
-             <string>lesson 30</string>
+             <string>30. jorogumo</string>
             </property>
             <property name="iconSize">
              <size>
@@ -974,7 +981,7 @@
            <widget class="QRadioButton" name="lessonButton_7">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -995,7 +1002,7 @@
            <widget class="QRadioButton" name="lessonButton_15">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1020,7 +1027,7 @@
              </font>
             </property>
             <property name="text">
-             <string>23. animals</string>
+             <string>23. future</string>
             </property>
             <property name="iconSize">
              <size>
@@ -1041,7 +1048,7 @@
              </font>
             </property>
             <property name="text">
-             <string>lesson 31</string>
+             <string>32. vampires</string>
             </property>
             <property name="iconSize">
              <size>
@@ -1058,7 +1065,7 @@
            <widget class="QRadioButton" name="lessonButton_8">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
@@ -1079,11 +1086,11 @@
            <widget class="QRadioButton" name="lessonButton_16">
             <property name="font">
              <font>
-              <pointsize>14</pointsize>
+              <pointsize>12</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>16. fashion</string>
+             <string>16. likes and dislikes</string>
             </property>
             <property name="iconSize">
              <size>
@@ -1104,7 +1111,7 @@
              </font>
             </property>
             <property name="text">
-             <string>24. elements, spirit</string>
+             <string>24. age</string>
             </property>
             <property name="iconSize">
              <size>
@@ -1125,7 +1132,7 @@
              </font>
             </property>
             <property name="text">
-             <string>lesson 32</string>
+             <string>32. ghosts and spirits</string>
             </property>
             <property name="iconSize">
              <size>
@@ -1309,6 +1316,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -87,7 +87,7 @@ namespace engrammar {
     std::string v_past(std::string &verb, const uint8_t &tense);
 
     //transform adjective into ly form
-    std::string ly(std::string &adjective);
+    std::string ly(std::string_view adjective);
 
 	//tranform word to ing form
     std::string ing(std::string &word);
