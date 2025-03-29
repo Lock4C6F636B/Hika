@@ -1,9 +1,0 @@
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/HiKa.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/edit_cache.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/rebuild_cache.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/list_install_components.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/install.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/install/local.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/install/strip.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/HiKa_autogen_timestamp_deps.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-new/CMakeFiles/HiKa_autogen.dir

@@ -1,3 +1,0 @@
-/home/lock/programming/c++/HiKa_linux/build/Desktop-Profile/CMakeFiles/CMakeScratch/TryCompile-fahDKh/CMakeFiles/cmTC_75bb2.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-Profile/CMakeFiles/CMakeScratch/TryCompile-fahDKh/CMakeFiles/edit_cache.dir
-/home/lock/programming/c++/HiKa_linux/build/Desktop-Profile/CMakeFiles/CMakeScratch/TryCompile-fahDKh/CMakeFiles/rebuild_cache.dir
