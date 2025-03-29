@@ -573,6 +573,13 @@ int Sentencer::ENbuild_sentence_te_form() const{
     }
 
 
+    //swap position adverb and verb. so ly word as behind to sound more naturally
+    if(data.template_type == 1){
+        for (auto& sentence : buddha_sutras) {
+            sentence.push_back("?"); //also add question mark for proper punctiation
+        }
+    }
+
     //swap position so first is do/be, followed by subject
     if(data.template_type == 1){
         for (auto& sentence : buddha_sutras) {
