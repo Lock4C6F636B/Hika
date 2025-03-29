@@ -110,4 +110,13 @@ class Sentencer: private Origin<SentencerData>,private ScriptureOfWest{
         using Origin::updateLib;
         using Origin::getDifficulty;
         using ScriptureOfWest::string_sutra;
+
+
+        //helper functions
+        void jp_add_subject() const noexcept;
+        void jp_add_specifier() const noexcept;
+        void jp_add_object() const noexcept;
+        void en_add_subject() const noexcept;
+        void en_add_specifier(const bool is_question, const bool is_negative) const noexcept;
+        void en_add_object(const bool using_specifier, const bool is_question, const bool is_negative) const noexcept;
 };

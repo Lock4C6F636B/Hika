@@ -1,0 +1,27 @@
+# ninja log v6
+2	2889	1743157151860053733	HiKa_autogen/timestamp	434c50511d54514b
+2	2889	1743157151860053733	HiKa_autogen/mocs_compilation.cpp	434c50511d54514b
+2	2889	1743157151860053733	/home/lock/programming/c++/HiKa_linux/build/Desktop-new/HiKa_autogen/timestamp	434c50511d54514b
+2	2889	1743157151860053733	/home/lock/programming/c++/HiKa_linux/build/Desktop-new/HiKa_autogen/mocs_compilation.cpp	434c50511d54514b
+2891	5917	1743157154846052618	HiKa_autogen/EWIEGA46WW/qrc_resources.cpp	be0669592d90437b
+2891	5917	1743157154846052618	/home/lock/programming/c++/HiKa_linux/build/Desktop-new/HiKa_autogen/EWIEGA46WW/qrc_resources.cpp	be0669592d90437b
+5917	21124	1743157154897052599	CMakeFiles/HiKa.dir/HiKa_autogen/mocs_compilation.cpp.o	90a29d4d08203d7b
+5917	21161	1743157154897052599	CMakeFiles/HiKa.dir/main.cpp.o	a8abedeb1210d745
+21161	25055	1743157170141046905	CMakeFiles/HiKa.dir/backEnd/alphabet/Alphabet.cpp.o	75a1d797a687f709
+21127	25310	1743157170107046917	CMakeFiles/HiKa.dir/backEnd/alphabet/AlpGame.cpp.o	8b6e4d37d3b436ad
+5918	25605	1743157154898052598	CMakeFiles/HiKa.dir/hika.cpp.o	5c17c6afec6245a1
+25055	34497	1743157174035045450	CMakeFiles/HiKa.dir/backEnd/grammar/engrammar/ENGrammar.cpp.o	9b576c58aaf7dec2
+25310	34869	1743157174290045355	CMakeFiles/HiKa.dir/backEnd/grammar/jpgrammar/JPGrammar.cpp.o	f9f0241c77acf032
+25605	35844	1743157174585045245	CMakeFiles/HiKa.dir/backEnd/inflectionmaster/InflectionMaster.cpp.o	5ed126059714d30b
+34497	44343	1743157183477041923	CMakeFiles/HiKa.dir/backEnd/library/Library.cpp.o	bbfb23a1511793b4
+34869	44468	1743157183849041784	CMakeFiles/HiKa.dir/backEnd/library/Vocabulary.cpp.o	fa423af553bbbbee
+35844	50552	1743157184824041420	CMakeFiles/HiKa.dir/backEnd/sentencer/Sentencer.cpp.o	437338791e0dcc09
+44470	60515	1743157193450038198	CMakeFiles/HiKa.dir/pubximl/pugixml.cpp.o	2fa3938f44b64f20
+44343	61252	1743157193323038245	CMakeFiles/HiKa.dir/backEnd/wordbringer/WordBringer.cpp.o	c23d7471b6df3dd9
+50603	71639	1743157199583035907	CMakeFiles/HiKa.dir/background.cpp.o	593ec89b5887f257
+61255	80951	1743157210235031928	CMakeFiles/HiKa.dir/wbwindow.cpp.o	b0a0d5e079eb0308
+60516	81185	1743157209496032204	CMakeFiles/HiKa.dir/Inflectwindow.cpp.o	30e496e9fed89582
+71644	104712	1743157220624028047	CMakeFiles/HiKa.dir/sentencerwindow.cpp.o	d7cad8bd40461739
+80953	105525	1743157229933024570	CMakeFiles/HiKa.dir/originwindow.cpp.o	9ab92fe34f55ea1e
+81185	149248	1743157230165024483	CMakeFiles/HiKa.dir/HiKa_autogen/EWIEGA46WW/qrc_resources.cpp.o	e0c02235998a97c9
+149248	150507	1743157298227999060	HiKa	5fa5e2f47873b1b2

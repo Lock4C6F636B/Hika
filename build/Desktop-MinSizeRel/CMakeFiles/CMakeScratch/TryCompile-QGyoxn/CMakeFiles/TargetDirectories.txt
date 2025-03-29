@@ -1,0 +1,3 @@
+/home/lock/programming/c++/HiKa_linux/build/Desktop-MinSizeRel/CMakeFiles/CMakeScratch/TryCompile-QGyoxn/CMakeFiles/cmTC_397fd.dir
+/home/lock/programming/c++/HiKa_linux/build/Desktop-MinSizeRel/CMakeFiles/CMakeScratch/TryCompile-QGyoxn/CMakeFiles/edit_cache.dir
+/home/lock/programming/c++/HiKa_linux/build/Desktop-MinSizeRel/CMakeFiles/CMakeScratch/TryCompile-QGyoxn/CMakeFiles/rebuild_cache.dir

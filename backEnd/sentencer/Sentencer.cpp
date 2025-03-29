@@ -227,41 +227,8 @@ std::string Sentencer::JPbuild_prompt_simple() const {
 
 //build japanese sentence answers
 int Sentencer::JPbuild_sentence_simple() const {    
-	//lambda to add each meaning of word to each comparasion sentences
-    auto add_word = [this](const size_t &type, const size_t& index, bool is_last) {
-        std::vector<std::vector<std::string>> new_sentences;
-        for (const auto &sentence : buddha_sutras) { //run through already generated
-            for (size_t mean = 0; mean < library->mean_size(type, index,vocabSelect::second); ++mean) { //run through available meanings
-                std::string word = library->pick(type, index, mean, vocabSelect::second); //pick word from database
-				if (is_last) { //object of sentence need formatting
-					switch (type) {
-						case 2:
-                            word = jpgrammar::format_adj(word, data.format, data.formal);
-							break;
-						case 5:
-                            word = jpgrammar::format_verb(word, data.format, data.formal);
-							break;
-						default:
-                            word = jpgrammar::desu(word, data.format);
-							break;
-					}
-				}
-				else { //standard case
-                    if (type == 5) { word = jpgrammar::subjectify(word, data.sub_type); //adjectives and verbs need to be subjetified
-					}
-				}
-                std::vector<std::string> new_sentence = sentence;
-                new_sentence.push_back(word);//put each meaning into index
-                new_sentences.push_back(new_sentence);
-			}
-		}
-        buddha_sutras = std::move(new_sentences);
-	};
-
-
 	//add subject
-	add_word(data.sub_type, data.sub_index,false); //add subject to strings of sentences
-
+    jp_add_subject(); //add subject to sentences
 
 	//add particle
     if (data.particle == 0 || data.particle == 1) {
@@ -293,8 +260,7 @@ int Sentencer::JPbuild_sentence_simple() const {
 
 
 	//add object
-	add_word(data.obj_type, data.obj_index,true); //add subject to strings of sentences
-
+    jp_add_object();
 
     //add ka, if question
     if(data.template_type == 1){
@@ -353,41 +319,8 @@ std::string Sentencer::JPbuild_prompt_te_form() const{
 }
 
 int Sentencer::JPbuild_sentence_te_form() const {
-    //lambda to add each meaning of word to each comparasion sentences
-    auto add_word = [this](const size_t &type, const size_t &index, const size_t &format, bool is_last) {
-        std::vector<std::vector<std::string>> new_sentences;
-        for (const auto &sentence : buddha_sutras) { //run through already generated
-            for (size_t mean = 0; mean < library->mean_size(type, index,vocabSelect::second); ++mean) { //run through available meanings
-                std::string word = library->pick(type, index, mean, vocabSelect::second); //pick word from database
-                if (is_last) { //object of sentence need formatting
-                    switch (type) {
-                    case 2:
-                        word = jpgrammar::format_adj(word, format, data.formal);
-                        break;
-                    case 5:
-                        word = jpgrammar::format_verb(word, format, data.formal);
-                        break;
-                    default:
-                        word = jpgrammar::desu(word, format);
-                        break;
-                    }
-                }
-                else { //standard case
-                    if (type == 5) { word = jpgrammar::subjectify(word, data.sub_type); //adjectives and verbs need to be subjetified
-                    }
-                }
-                std::vector<std::string> new_sentence = sentence;
-                new_sentence.push_back(word);//put each meaning into index
-                new_sentences.push_back(new_sentence);
-            }
-        }
-        buddha_sutras = std::move(new_sentences);
-    };
-
-
     //add subject
-    add_word(data.sub_type, data.sub_index, data.format, false); //add subject to strings of sentences.. note data.format is completely useless here
-
+    jp_add_subject();
 
     //add particle
     if (data.particle == 0 || data.particle == 1) {
@@ -418,9 +351,8 @@ int Sentencer::JPbuild_sentence_te_form() const {
     }
 
 
-    add_word(data.specif_type, data.specif_index, data.specif_format,true); //add formatted specifier
-    add_word(data.obj_type, data.obj_index, data.format,true); //add formatted object
-
+    jp_add_specifier(); //add specifier to all sentences
+    jp_add_object(); //add object to all sentences
 
     //add ka, if question
     if(data.template_type == 3){
@@ -490,46 +422,22 @@ std::string Sentencer::ENbuild_prompt_simple() const {
 
 //build english sentence answers
 int Sentencer::ENbuild_sentence_simple() const {
-    //lambda to add each meaning of word to each comparasion sentences
-    auto add_word = [this](const size_t& type, const size_t& index,bool is_last) {
-        std::vector<std::vector<std::string>> new_sentences;
-        for (const auto &sentence : buddha_sutras) { //run through already generated
-            for (size_t mean = 0; mean < library->mean_size(type, index,vocabSelect::second); ++mean) { //run through available meanings
-                std::vector<std::string> new_sentence = sentence; //stand in where new words are generated to not mess looping of original
-
-                std::string word = library->pick(type, index, mean, vocabSelect::second); //pick word from database
-                if((!is_last) && type == 5){ //ensure verb is subjectified
-                    word = engrammar::ing(word);
-                }
-                else if(is_last && type == 5){ //ensure verb is bended
-                    if(data.template_type == 0){
-                        word = engrammar::format_verb(word,data.format,library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second)); //format verb
-                    }
-                    else{
-                        new_sentence.push_back(engrammar::dot(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::first),data.format)); //add do first, without formatting verb
-                    }
-                }
-
-                new_sentence.push_back(word);//put each meaning into index
-                new_sentences.push_back(new_sentence); //put each meaning into index
-            }
+    //do or to be for question... technically speaking only template_types 0-1 should get here, but better to desribe it as general odd == question
+    if(data.template_type%2 != 0){
+        for(std::vector<std::string> &sentence : buddha_sutras){
+            if(data.obj_type == 5){
+                sentence.push_back(engrammar::dot(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second), data.format));
+            }else sentence.push_back(engrammar::be(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second), data.format));
         }
-        buddha_sutras = std::move(new_sentences);
-    };
+
+    }
 
 
     //add subject
-    add_word(data.sub_type, data.sub_index, false); //add subject to strings of sentences
-
-    //add to be or do
-    for(auto& sentence : buddha_sutras){
-        if(data.obj_type != 5){
-            sentence.push_back(engrammar::be(buddha_sutras[0][data.sub_mean],data.format)); //if not verb, add "to be"
-        }
-    }
+    en_add_subject(); //add subject to sentences
 
     //add object
-    add_word(data.obj_type, data.obj_index, true); //add subject to strings of sentences
+    en_add_object(false, data.template_type%2 == 0? false : true, data.format%2 ==  0? false : true); //every odd template is always qustion. format up to 4 follows pattern odd == negative, even == positive
 
 
     if (data.particle == 2) {
@@ -542,9 +450,6 @@ int Sentencer::ENbuild_sentence_simple() const {
     //swap position so first is do/be, followed by subject
     if(data.template_type == 1){
         for (auto& sentence : buddha_sutras) {
-            std::string stand_in = sentence[0];
-            sentence[9] = sentence[1];
-            sentence[1] = stand_in;
             sentence.push_back("?"); //also add question mark for proper punctiation
         }
     }
@@ -639,5 +544,182 @@ std::string Sentencer::ENbuild_prompt_te_form() const {
     return prompt;
 }
 
-int Sentencer::ENbuild_sentence_te_form() const{ return 0;}
+int Sentencer::ENbuild_sentence_te_form() const{
+    //do or to be for question... technically speaking only template_types 0-1 should get here, but better to desribe it as general odd == question
+    if(data.template_type%2 != 0){
+        for(std::vector<std::string> &sentence : buddha_sutras){
+            if(data.obj_type == 5){
+                sentence.push_back(engrammar::dot(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second), data.format));
+            }else sentence.push_back(engrammar::be(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second), data.format));
+        }
+
+    }
+
+
+    //add subject
+    en_add_subject(); //add subject to sentences
+
+    //add specifier
+    en_add_specifier(data.template_type%2 == 0? false : true, data.format%2 ==  0? false : true);
+
+    //add object
+    en_add_object(true, data.template_type%2 == 0? false : true, data.format%2 ==  0? false : true); //every odd template is always qustion. format up to 4 follows pattern odd == negative, even == positive
+
+
+    if (data.particle == 2) {
+        for (auto& sentence : buddha_sutras) {
+            sentence.push_back("too");
+        }
+    }
+
+
+    //swap position so first is do/be, followed by subject
+    if(data.template_type == 1){
+        for (auto& sentence : buddha_sutras) {
+            sentence.push_back("?"); //also add question mark for proper punctiation
+        }
+    }
+
+
+    return 0;
+}
+
+
+
+
+//helper functions-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+void Sentencer::jp_add_subject() const noexcept{
+    std::vector<std::vector<std::string>> new_sentences;
+    for (const auto &sentence : buddha_sutras) { //run through already generated
+        for (size_t mean = 0; mean < library->mean_size(data.sub_type, data.sub_index,vocabSelect::second); ++mean) { //run through available meanings
+            std::string subject = library->pick(data.sub_type, data.sub_index, mean, vocabSelect::second); //pick word from database
+            if (data.sub_type == 5) { subject = jpgrammar::subjectify(subject, data.sub_type); //verbs need to be subjetified
+            }
+
+            std::vector<std::string> new_sentence = sentence;
+            new_sentence.push_back(subject);//put each meaning into index
+            new_sentences.push_back(new_sentence);
+        }
+    }
+    buddha_sutras = std::move(new_sentences);
+}
+
+void Sentencer::jp_add_specifier() const noexcept{
+    std::vector<std::vector<std::string>> new_sentences;
+    for (const auto &sentence : buddha_sutras) { //run through already generated
+        for (size_t mean = 0; mean < library->mean_size(data.specif_type, data.specif_index,vocabSelect::second); ++mean) { //run through available meanings
+            std::string specifier = library->pick(data.specif_type, data.specif_index, mean, vocabSelect::second); //pick word from database
+
+            switch (data.specif_type) {
+            case 2:
+                specifier= jpgrammar::format_adj(specifier, data.specif_format, data.formal);
+                break;
+            case 5:
+                specifier = jpgrammar::format_verb(specifier, data.specif_format, data.formal);
+                break;
+            }
+
+
+            std::vector<std::string> new_sentence = sentence;
+            new_sentence.push_back(specifier);//put each meaning into index
+            new_sentences.push_back(new_sentence);
+        }
+    }
+    buddha_sutras = std::move(new_sentences);
+}
+
+void Sentencer::jp_add_object() const noexcept{
+    std::vector<std::vector<std::string>> new_sentences;
+    for (const auto &sentence : buddha_sutras) { //run through already generated
+        for (size_t mean = 0; mean < library->mean_size(data.obj_type, data.obj_index,vocabSelect::second); ++mean) { //run through available meanings
+            std::string object = library->pick(data.obj_type, data.obj_index, mean, vocabSelect::second); //pick word from database
+
+            switch (data.obj_type) {
+            case 2:
+                object = jpgrammar::format_adj(object, data.format, data.formal);
+                break;
+            case 5:
+                object = jpgrammar::format_verb(object, data.format, data.formal);
+                break;
+            default:
+                object = jpgrammar::desu(object, data.format);
+                break;
+            }
+
+            std::vector<std::string> new_sentence = sentence;
+            new_sentence.push_back(object);//put each meaning into index
+            new_sentences.push_back(new_sentence);
+        }
+    }
+    buddha_sutras = std::move(new_sentences);
+}
+
+
+void Sentencer::en_add_subject() const noexcept{
+    std::vector<std::vector<std::string>> new_sentences;
+    for (const auto &sentence : buddha_sutras) { //run through already generated
+        for (size_t mean = 0; mean < library->mean_size(data.sub_type, data.sub_index,vocabSelect::second); ++mean) { //run through available meanings
+            std::string subject = library->pick(data.sub_type, data.sub_index, mean, vocabSelect::second); //pick word from database
+            if(data.sub_type == 5){ //ensure verb is subjectified
+                subject = engrammar::ing(subject);
+            }
+
+            std::vector<std::string> new_sentence = sentence; //stand in where new words are generated to not mess looping of original
+            new_sentence.push_back(subject);//put each meaning into index
+            new_sentences.push_back(new_sentence); //put each meaning into index
+        }
+    }
+    buddha_sutras = std::move(new_sentences);
+}
+
+void Sentencer::en_add_specifier(const bool is_question, const bool is_negative) const noexcept{
+    std::vector<std::vector<std::string>> new_sentences;
+    for (const auto &sentence : buddha_sutras) { //run through already generated
+        for (size_t mean = 0; mean < library->mean_size(data.specif_type, data.specif_index,vocabSelect::second); ++mean) { //run through available meanings
+            std::vector<std::string> new_sentence = sentence; //stand in where new words are generated to not mess looping of original
+            std::string specifier = library->pick(data.specif_type, data.specif_index, mean, vocabSelect::second); //pick word from database
+
+            if(data.specif_type == 2 && data.obj_type == 5){
+                specifier = engrammar::ly(specifier);
+                new_sentence.push_back(specifier);
+            }else{
+                if((!is_question || !is_negative) && data.specif_type == 5){ //format verb
+                    specifier = engrammar::format_verb(specifier, data.specif_format, library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second));
+                }
+                else if(data.specif_type != 5 && !is_question){
+                    new_sentence.push_back(engrammar::be(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second), data.format)); //add to be if not question or verb
+                }
+
+                new_sentence.push_back(specifier);
+                new_sentence.push_back("and");
+            }
+
+            new_sentences.push_back(new_sentence); //put each meaning into index
+        }
+    }
+    buddha_sutras = std::move(new_sentences);
+}
+
+void Sentencer::en_add_object(const bool using_specifier, const bool is_question, const bool is_negative) const noexcept{
+    std::vector<std::vector<std::string>> new_sentences;
+    for (const auto &sentence : buddha_sutras) { //run through already generated
+        for (size_t mean = 0; mean < library->mean_size(data.obj_type, data.obj_index,vocabSelect::second); ++mean) { //run through available meanings
+            std::vector<std::string> new_sentence = sentence; //stand in where new words are generated to not mess looping of original
+            std::string object = library->pick(data.obj_type, data.obj_index, mean, vocabSelect::second); //pick word from database
+
+            //sorted by what i think is most probable to ensure more likely cases will be resolved quicker
+            if(data.obj_type == 5 && (!is_negative || (!using_specifier && !is_question))){ //format verb
+                 object = engrammar::format_verb(object, data.specif_format, library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second));
+            }
+            else if(data.obj_type != 5 && (!using_specifier && !is_question)){ //if it is none-negative question
+                new_sentence.push_back(engrammar::be(library->pick(data.sub_type, data.sub_index, data.sub_mean, vocabSelect::second), data.format)); //add to be if not question or verb
+            }
+
+            new_sentence.push_back(object);
+            new_sentences.push_back(new_sentence); //put each meaning into index
+        }
+    }
+
+    buddha_sutras = std::move(new_sentences);
+}
 
