@@ -6,7 +6,7 @@ SentencerWindow::SentencerWindow(QWidget *parent, const std::shared_ptr<Library>
     sentencer = std::make_unique<Sentencer>(library);
 
     // Set all window flags at once to avoid conflicts
-    setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
 
     // Add escape key handling
     setFocusPolicy(Qt::StrongFocus);

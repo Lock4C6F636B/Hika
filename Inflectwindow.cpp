@@ -6,7 +6,7 @@ InflectWindow::InflectWindow(QWidget *parent, const std::shared_ptr<Library> lib
     inflection_master = std::make_unique<InflectionMaster>(library);
 
     // Set all window flags at once to avoid conflicts
-    setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
 
     // Add escape key handling
     setFocusPolicy(Qt::StrongFocus);

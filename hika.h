@@ -21,18 +21,12 @@ enum libraryInitialized{ //to show windows only when library is ready
     library, wordbringer, inflection_master, sentencer
 };
 
-struct activeFocus{
-    bool applicationFocus = true;
-    bool wordbringerFocus, inflectionFocus, sentencerFocus;
-};
-
 
 class HiKa : public QMainWindow{
 private:
     Q_OBJECT
     std::unique_ptr<Ui::HiKa> ui;
     std::shared_ptr<bool> isFullScreen;
-    activeFocus active_focus;
     std::string input; //user input
     libraryInitialized libInitialize; //to determine who is initializing library
 

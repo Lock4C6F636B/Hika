@@ -6,7 +6,6 @@ WBWindow::WBWindow(QWidget *parent, const std::shared_ptr<Library> library, cons
     word_bringer = std::make_unique<WordBringer>(library);
 
     // Set all window flags at once to avoid conflicts
-    //setWindowFlags(Qt::Window | Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint);
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
 
     // Add escape key handling

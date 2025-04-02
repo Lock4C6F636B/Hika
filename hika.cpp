@@ -93,18 +93,30 @@ void HiKa::moveEvent(QMoveEvent* event){
 
 // Add this method to HiKa class:
 void HiKa::applicationState(Qt::ApplicationState state) {
-    active_focus.applicationFocus = (state == Qt::ApplicationActive);
+    //check if application has focus
+    if(state == Qt::ApplicationActive){
+        //show frame
+        this->raise();
+        //this->activateWindow();
 
-    // Update window states based on new focus state
-    if (wordbringerWindow && active_focus.wordbringerFocus) {
-        wordbringerWindow->setOnTop(active_focus.applicationFocus);
+        //// Update window states based on new focus state
+        if (wordbringerWindow && wordbringerWindow->is_active()) {
+            wordbringerWindow->raise();
+            wordbringerWindow->activateWindow();
+            wordbringerWindow->show();
+        }
+        if (inflectionWindow && inflectionWindow->is_active()) {
+            inflectionWindow->raise();
+            inflectionWindow->activateWindow();
+            inflectionWindow->show();
+        }
+        if (sentencerWindow && sentencerWindow->is_active()) {
+            sentencerWindow->raise();
+            sentencerWindow->activateWindow();
+            sentencerWindow->show();
+        }
     }
-    if (inflectionWindow && active_focus.inflectionFocus) {
-        //inflectionWindow->setOnTop(active_focus.applicationFocus);
-    }
-    if (sentencerWindow && active_focus.sentencerFocus) {
-        //sentencerWindow->setOnTop(active_focus.applicationFocus);
-    }
+
 }
 
 

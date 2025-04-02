@@ -24,9 +24,16 @@ void OriginWindow::keyPressEvent(QKeyEvent *event) {
 
 //overrided show()
 void OriginWindow::showEvent(QShowEvent* event){
+    isActive = true;
     QWidget::showEvent(event);
     slide_in_2(); //show up animation
 }
+
+void OriginWindow::hideEvent(QHideEvent* event) {
+    isActive = false;
+    QWidget::hideEvent(event);
+}
+
 
 //override resizing policies
 void OriginWindow::resizeEvent(QResizeEvent* event){
@@ -52,15 +59,6 @@ void OriginWindow::adjustSize(){
     }
 }
 
-
-void OriginWindow::setOnTop(bool shouldBeOnTop) {
-    if(shouldBeOnTop) {
-        setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
-    } else {
-        setWindowFlags(windowFlags() & ~Qt::WindowStaysOnTopHint);
-    }
-    QWidget::show();  // Need to show() after changing window flags
-}
 
 
 //moderated, cool animation
