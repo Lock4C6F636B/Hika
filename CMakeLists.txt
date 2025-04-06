@@ -9,11 +9,16 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Add this before find_package(SFML ...)
+#set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "/usr/lib/x86_64-linux-gnu/cmake/SFML/")
+
 find_package(Qt6 REQUIRED COMPONENTS
     Widgets
     Multimedia
     MultimediaWidgets
 )
+
+#find_package(SFML 2.5 COMPONENTS audio REQUIRED)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -46,6 +51,7 @@ set(PROJECT_SOURCES
         pubximl/pugiconfig.hpp
         pubximl/pugixml.cpp
         pubximl/pugixml.hpp
+        miniaudio/miniaudio.h
 )
 
 
@@ -80,8 +86,6 @@ else()
             guide/lesson_guide.txt guide/template.txt
             LICENSE
             README.md
-
-
         )
     endif()
 endif()
@@ -99,14 +103,15 @@ target_include_directories(HiKa PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/backEnd/template
     ${CMAKE_CURRENT_SOURCE_DIR}/backEnd/wordbringer
     ${CMAKE_CURRENT_SOURCE_DIR}/pubximl
+    ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio
 )
 
 target_link_libraries(
     HiKa PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Multimedia
     Qt${QT_VERSION_MAJOR}::MultimediaWidgets
+    #sfml-audio
 )
-
 
 if(QT_VERSION VERSION_LESS 6.1.0)
   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.HiKa)

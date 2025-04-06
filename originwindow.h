@@ -17,6 +17,7 @@ private:
     bool isActive;
 
 protected:
+
     //key input reaction, contais F11 for fullscreen
     virtual void keyPressEvent(QKeyEvent *event) override;
 
@@ -34,7 +35,8 @@ protected:
 
 
 public:
-    explicit OriginWindow(QWidget *parent = nullptr, const std::shared_ptr<bool> isfullScreen = nullptr) : QWidget(parent), isFullScreen(isfullScreen){}; //not intended as object, just template to encapsulate
+    explicit OriginWindow(QWidget *parent = nullptr, const std::shared_ptr<bool> isfullScreen = nullptr) : QWidget(parent), isFullScreen(isfullScreen){};
+
     virtual ~OriginWindow() = default;
 
     //helper to actually resize and position the window

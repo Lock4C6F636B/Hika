@@ -11,7 +11,6 @@ WBWindow::WBWindow(QWidget *parent, const std::shared_ptr<Library> library, cons
     // Add escape key handling
     setFocusPolicy(Qt::StrongFocus);
 
-
     connect(ui->inputLineEdit, &QLineEdit::returnPressed,[this](){ //start loop of backend
         wordbringer();
     });

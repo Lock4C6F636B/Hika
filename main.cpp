@@ -1,7 +1,10 @@
 #include "hika.h"
-
+#define MINIAUDIO_IMPLEMENTATION
+#include <miniaudio.h>
 #include <QApplication>
 #include <QFile>
+#include <QMediaPlayer>
+#include <QAudioOutput>
 
 QString readTextFile(QString path){
     QFile file(path);
@@ -25,7 +28,6 @@ int main(int argc, char *argv[]){
         qWarning() << "Failed to load CSS file!";
     }
     a.setStyleSheet(css);
-
 
     HiKa w;
     w.show();

@@ -36,6 +36,8 @@
         <file>resources/onni1.png</file>
         <file>resources/hunt1.png</file>
         <file>resources/hussle1.png</file>
+        <file>resources/fail_sound.wav</file>
+        <file>resources/succes_sound.wav</file>
     </qresource>
     <qresource prefix="/audio_vocabulary">
         <file>resources/audio_vocabulary/ゆれい/en/en_ありがとうございます.mp3</file>
