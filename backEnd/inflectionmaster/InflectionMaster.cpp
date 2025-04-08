@@ -7,7 +7,7 @@ int InflectionMaster::start() {
     std::mt19937 gen(rd());
 
     //probability for having a specifier (e.g. 30% chance)
-    std::bernoulli_distribution use_specifier(0.2);
+    std::bernoulli_distribution use_specifier(0.4);
     bool should_use_specifier = use_specifier(gen);
 
 	//initialize weighted random number generator for type 

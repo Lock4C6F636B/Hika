@@ -1,6 +1,4 @@
 #include "hika.h"
-#define MINIAUDIO_IMPLEMENTATION
-#include <miniaudio.h>
 #include <QApplication>
 #include <QFile>
 #include <QMediaPlayer>

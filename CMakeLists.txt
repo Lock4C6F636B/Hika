@@ -51,7 +51,6 @@ set(PROJECT_SOURCES
         pubximl/pugiconfig.hpp
         pubximl/pugixml.cpp
         pubximl/pugixml.hpp
-        miniaudio/miniaudio.h
 )
 
 
@@ -103,7 +102,6 @@ target_include_directories(HiKa PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/backEnd/template
     ${CMAKE_CURRENT_SOURCE_DIR}/backEnd/wordbringer
     ${CMAKE_CURRENT_SOURCE_DIR}/pubximl
-    ${CMAKE_CURRENT_SOURCE_DIR}/miniaudio
 )
 
 target_link_libraries(
