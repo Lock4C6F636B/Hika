@@ -1,0 +1,43 @@
+vegetarian;bejitarian;べじたりあん|ベジタリアン;ベジタリアン #1,noun,5~
+waitress;weitoresu;うぇいとれす|ウェイトレス;ウェイトレス #1,noun,5~
+salmon;saamon;さあもん|サーモン;サーモン #1,noun,5~
+bird|fowl;tori;とり;鳥 #1,noun,5~
+chicken meat;toriniku;とりにく;鶏肉 #1,noun,5~
+bean|peas;mame;まめ;豆 #1,noun,5~
+toast|cheers;kampai;かんぱい;乾杯 #0,mixed,6~
+beer;biiru;びいる|ビール;ビール #1,noun,5~
+building;biru;びる;ビル #1,noun,8~
+
+
+cold|illness;kaze;かぜ;風邪 #1,noun,26~
+medicine;kusuri;くすり;薬 #1,noun,26~
+tobacco;tabako;たばこ;煙草 #1,noun,"to be decided"~
+no good|useless;dame;だめ;駄目 #1,adjective,4~
+perhaps|probably;tabun;たぶん;多分 #1,noun,6~
+achoo;hakushon;はくしょん|ハクション;ハクション #1,probably,26~
+
+password;pasuwaado;ぱすふあど|パスフード;パスフード #1,noun,27~
+company|corporation;kaisha;かいしゃ;会社 #1,noun,22~
+telephone|phone;denwa;でんわ;電話 #1,noun,27~
+number;bangou;ばんごう;番号 #1,noun,11~
+email adress;meeru adoresu;めえるあどれす|メールアドレス;メールアドレス #1,noun,22~
+
+
+name;onamae|namae;おなまえ|なまえ;お名前|なまえ #1,noun,14~
+nationality;kokuseki;こくせき;国籍 #1,noun,14~
+hometown;shuushin;しゅうしん;就寝 #1,noun,13~
+occupation;shokugyou;しょくぎょう;職業 #1,noun,13~
+
+
+how much;ikura;いくら;いくら #1,noun,4~
+here;koko;ここ;ここ #3,noun,9~
+shop;shoppu;しょっぷ|ショップ;ショップ #1,noun,8~
+please;kudasai;ください;下さい #1,mixed,2~
+shop assistant;tenin;てんいん;店員 #1,noun,4~
+
+
+how much;ikura;いくら;いくら#6,adverb,4~
+shop|store;shoppu;しょっぷ|ショップ;ショップ#1,noun,4~
+please;kudasai;ください;下さい#0,mixed,2~
+shop assistant|clerk|salesperson;tenin;てんいん;店員#1,noun,4~
+

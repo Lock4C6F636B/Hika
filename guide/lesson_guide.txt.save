@@ -1,0 +1,52 @@
+1 	- greeting & introduction
+2 	- show appreciation
+3 	- being sorry
+4 	- shopping
+5 	- food and drink
+6 	- hang out with friends
+7 	- family
+8 	- location, places, structures¨
+9	- space (relative)
+10 	- weather and seasons
+11 	- numbers
+12 	- time and day
+13 	- me
+14 	- people (characteristics/trait)
+15 	- activities
+16	- like, dislike
+17 	- fashion
+18 	- life
+19 	- home and utensils
+20	- health
+21 	- school
+22 	- work
+23	- future
+24	- age
+25 	- animals
+26	- body parts
+27	- it (magic)	
+28 	- elements and spirits
+29	- honor
+30 	- jorogumo
+31	- vampire
+32	- ghosts, spirits
+33	- yokai
+
+1-7 remains same, 
+9->8 done
+10->9 done
+19->10 done
+->11 remains same
+15->12 done
+14->13 done
+17->14 done
+16->15 done
+->16 new
+18->17 done
+->18 new
+20->19 done
+->20 new
+->21 new
+8->22
+12->23
+13->24
